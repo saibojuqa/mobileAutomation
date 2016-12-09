@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[2016-11-13 20:36:00,106 [main] INFO  (Application.java:38)  - Reading properties file ./conf/application.properties
+]]>
+    </line>
+    <line>
+      <![CDATA[2016-11-13 20:36:00,197 [main] INFO  (testngTest.java:19)  - sample logger
+]]>
+    </line>
+  </reporter-output>
+  <suite name=" Automation Suite" duration-ms="31" started-at="2016-11-14T01:36:00Z" finished-at="2016-11-14T01:36:00Z">
+    <groups>
+    </groups>
+    <test name="SC2.0 - UI Automation - TestCases" duration-ms="31" started-at="2016-11-14T01:36:00Z" finished-at="2016-11-14T01:36:00Z">
+      <class name="com.peoplematter.testngTest">
+        <test-method status="PASS" signature="Logger()[pri:0, instance:com.peoplematter.testngTest@9f70c54]" name="Logger" duration-ms="14" started-at="2016-11-13T20:36:00Z" finished-at="2016-11-13T20:36:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2016-11-13 20:36:00,197 [main] INFO  (testngTest.java:19)  - sample logger
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logger -->
+      </class> <!-- com.peoplematter.testngTest -->
+    </test> <!-- SC2.0 - UI Automation - TestCases -->
+  </suite> <!--  Automation Suite -->
+</testng-results>

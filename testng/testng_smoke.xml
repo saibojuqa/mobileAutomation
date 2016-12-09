@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<suite name=" Automation Suite" preserve-order="true">
+
+    <Listners>
+        <Listener class-name="com.peoplematter.utils.listeners.AUTListener"/>
+    </Listners>
+
+
+    <test verbose="3" name="SC2.0 - UI Automation - TestCases" preserve-order="true">
+        <classes>
+            <class name="com.peoplematter.testngTest"/>
+        </classes>
+    </test>
+
+
+</suite>

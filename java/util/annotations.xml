@@ -1,0 +1,5 @@
+<root>
+    <item name='java.util.Properties void load(java.io.Reader)'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>
