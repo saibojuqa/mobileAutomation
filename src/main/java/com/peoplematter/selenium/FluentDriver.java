@@ -2,6 +2,7 @@ package com.peoplematter.selenium;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class FluentDriver {
@@ -23,7 +24,9 @@ public class FluentDriver {
     public FluentElement element(By by) {
         return new FluentElement(by, webDriver, webDriver);
     }
-
+    public Object executeScript(final String script, final Object... args) {
+        return ((JavascriptExecutor) webDriver).executeScript(script, args);
+    }
     public FluentButton button(By by) {
         return new FluentButton(by, webDriver, webDriver);
     }
@@ -40,4 +43,9 @@ public class FluentDriver {
     public FluentRadio radio(By by) {
         return new FluentRadio(by, webDriver, webDriver);
     }
+
+    public void navigateBack() {
+        webDriver.navigate().back();
+    }
+
 }
