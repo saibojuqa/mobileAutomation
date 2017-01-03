@@ -75,8 +75,17 @@ public class FluentElement {
         } catch (WebDriverException ex) {
             return false;
         }
+    }
 
+    public FluentElement bringElementInView() {
+        ((JavascriptExecutor) getWebDriver()).executeScript("arguments[0].scrollIntoView(true);", getElement());
+        return this;
+    }
+
+    public FluentElement jsClick() {
+        ((JavascriptExecutor) getWebDriver()).executeScript("arguments[0].click();", getElement());
+        return this;
     }
 
 
-}
+    }

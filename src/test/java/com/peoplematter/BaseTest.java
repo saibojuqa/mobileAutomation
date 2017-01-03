@@ -16,11 +16,11 @@ public class BaseTest extends Application implements Constants {
 
     @BeforeSuite
     public void setup() {
-        try {
+/*        try {
             initAndroidDriver();
         } catch (MalformedURLException e) {
             e.printStackTrace();
-        }
+        }*/
 
     }
 

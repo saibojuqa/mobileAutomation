@@ -101,7 +101,7 @@ public class MobileFluentWait<T> {
 
     public FluentWait getWebDriverWait(SearchContext webdriver, int timeout) {
         FluentWait<SearchContext> webDriverWait = new FluentWait<>(searchContext);
-        webDriverWait.pollingEvery(1, TimeUnit.MILLISECONDS);
+        webDriverWait.pollingEvery(2, TimeUnit.MILLISECONDS);
         webDriverWait.withTimeout(timeout, TimeUnit.SECONDS);
         return webDriverWait;
     }

@@ -3,6 +3,10 @@ package com.peoplematter.core;
 import io.appium.java_client.android.AndroidDriver;
 import lombok.extern.log4j.Log4j;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -17,11 +21,12 @@ import java.util.concurrent.TimeUnit;
 @Log4j
 public class Application {
 
-    private static Properties properties;
+    protected static Properties properties;
     public static String basedir;
     private static String appConfigFileLocation;
     private static String confDir = ".";
     private static AndroidDriver driver;
+    private static WebDriver webdriver;
 
     static {
         properties = new Properties();
@@ -72,4 +77,48 @@ public class Application {
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         return driver;
     }
+
+    public static WebDriver getWebdriver() {
+        return webdriver;
+    }
+
+
+    public void initWebDriver() {
+        String browser = properties.getProperty("browser");
+        if ("firefox".equals(browser)) {
+            initFireFoxDriver();
+        } else if ("chrome".equals(browser)) {
+            initChromeDriver();
+
+        } else if ("ie".equals(browser)) {
+            initIEDriver();
+        }
+    }
+
+    public void quitWebDiver(){
+        webdriver.close();
+        webdriver.quit();
+    }
+
+    public void initFireFoxDriver() {
+        log.info("Initializing Firefox Driver");
+        FirefoxDriver firefoxDriver = new FirefoxDriver();
+        firefoxDriver.manage().window().maximize();
+        webdriver = firefoxDriver;
+    }
+
+    public void initChromeDriver() {
+        log.info("Initializing Chrome Driver");
+        System.setProperty("webdriver.chrome.driver", properties.getProperty("chromeDriverPath"));
+        ChromeDriver chromeDriver = new ChromeDriver();
+        webdriver = chromeDriver;
+
+    }
+
+    public void initIEDriver() {
+        log.info("Initializing IE Driver");
+        InternetExplorerDriver internetExplorerDriver = new InternetExplorerDriver();
+        webdriver = internetExplorerDriver;
+    }
+
 }

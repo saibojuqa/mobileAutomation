@@ -29,4 +29,16 @@ public class BasePage implements Constants {
     public void navigateBackInMobile(){
         Application.getAndroidDriver().pressKeyCode(AndroidKeyCode.BACK);
     }
+
+/*    public FluentDriver getWd() {
+        if (fluentDriver == null) {
+            initWebDriver();
+        }
+        return fluentDriver;
+    }
+
+
+    public void initWebDriver() {
+        fluentDriver = new FluentDriver(Application.getWebdriver());
+    }*/
 }

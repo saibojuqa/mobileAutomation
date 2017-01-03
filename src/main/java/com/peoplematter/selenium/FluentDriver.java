@@ -13,6 +13,10 @@ public class FluentDriver {
         this.webDriver=androidDriver;
     }
 
+    public FluentDriver(WebDriver webDriver){
+        this.webDriver=webDriver;
+    }
+
     public WebDriver getWebDriver() {
         return webDriver;
     }
@@ -43,6 +47,11 @@ public class FluentDriver {
     public FluentRadio radio(By by) {
         return new FluentRadio(by, webDriver, webDriver);
     }
+
+    public FluentSelect select(final By by) {
+        return new FluentSelect(by, webDriver);
+    }
+
 
     public void navigateBack() {
         webDriver.navigate().back();
