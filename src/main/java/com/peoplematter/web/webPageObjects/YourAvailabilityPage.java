@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 /**
  * Created by sai.boju on 1/2/17.
  */
-public class YourAvailabilityPage9 extends BasePage {
+public class YourAvailabilityPage extends BasePage {
 
 
     private static final String HOURS_PER_WEEK = "//label[contains(@for,'hoursPerWeek')]/following-sibling::div/input";
@@ -19,7 +19,7 @@ public class YourAvailabilityPage9 extends BasePage {
     private static final String NOTICE_PERIOD_SELECTION = "//a[text()='%s']";
     private static final String NEXT = "moveNextSection";
 
-    public HowMuchToGetPaidPage10 checkAvailability(UserDetails userDetails) {
+    public HowMuchToGetPaidPage checkAvailability(UserDetails userDetails) {
 
         getWd().element(By.xpath(HOURS_PER_WEEK)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().clear().sendKeys
                 (userDetails.getHours());
@@ -31,7 +31,7 @@ public class YourAvailabilityPage9 extends BasePage {
         getWd().element(By.xpath(String.format(NOTICE_PERIOD_SELECTION, userDetails.getNoticePeriod()))).waitUntil(MAX_TIME)
                 .ifElementIsNotDisplayed().click();
         getWd().element(By.id(NEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
-        return new HowMuchToGetPaidPage10();
+        return new HowMuchToGetPaidPage();
 
     }
 

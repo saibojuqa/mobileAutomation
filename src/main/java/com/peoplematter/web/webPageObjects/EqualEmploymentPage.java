@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 /**
  * Created by sai.boju on 12/30/16.
  */
-public class EqualEmploymentPage3 extends BasePage {
+public class EqualEmploymentPage extends BasePage {
 
     private static final String RACE_BUTTON = "//div[@name='ethnicity']/descendant::a";
     private static final String RACE_SELECTION = "//a[text()='%s']";
@@ -14,7 +14,7 @@ public class EqualEmploymentPage3 extends BasePage {
     private static final String GENDER_SELECTION = "//a[text()='%s']";
     private static final String NEXT_BUTTON = "moveNextSection";
 
-    public TermsAndConditionsPage4 selectDropDownValues(UserDetails userDetails) {
+    public TermsAndConditionsPage selectDropDownValues(UserDetails userDetails) {
 
         getWd().element(By.xpath(RACE_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         getWd().element(By.xpath(String.format(RACE_SELECTION, userDetails.getRace()))).waitUntil(MAX_TIME)
@@ -25,7 +25,7 @@ public class EqualEmploymentPage3 extends BasePage {
                 .ifElementIsNotDisplayed().click();
         getWd().element(By.id(NEXT_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
 
-        return new TermsAndConditionsPage4();
+        return new TermsAndConditionsPage();
     }
 
 

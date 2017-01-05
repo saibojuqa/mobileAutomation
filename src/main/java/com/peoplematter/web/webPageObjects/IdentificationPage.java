@@ -16,7 +16,7 @@ public class IdentificationPage extends BasePage{
     private static final String DAY = "person_DayOfBirth";
     private static final String NEXT_BUTTON="moveNextSection";
 
-    public whatToExpectPage1 fillIdentificationDetails(UserDetails userDetails){
+    public whatToExpectPage fillIdentificationDetails(UserDetails userDetails){
 
         getWd().element(By.id(FIRST_NAME)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().clear().sendKeys(userDetails
                 .getFirstName());
@@ -29,7 +29,7 @@ public class IdentificationPage extends BasePage{
         getWd().select(By.id(MONTH)).selectByText(userDetails.getMonth());
         getWd().select(By.id(DAY)).selectByText(userDetails.getDay());
         getWd().element(By.id(NEXT_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
-        return new whatToExpectPage1();
+        return new whatToExpectPage();
     }
 
 

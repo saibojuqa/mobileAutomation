@@ -29,7 +29,6 @@ public class UserDetails {
     private String general;
     private String numeric;
     private String address1;
-    private String state_selection;
     private String cellphone;
 
 

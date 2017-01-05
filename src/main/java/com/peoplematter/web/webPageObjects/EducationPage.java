@@ -5,18 +5,16 @@ import org.openqa.selenium.By;
 /**
  * Created by sai.boju on 1/2/17.
  */
-public class ResumePage8 extends BasePage{
-
+public class EducationPage extends BasePage {
 
     private static final String NEXT_BUTTON = "moveNextSection";
 
-    public YourAvailabilityPage9 clickOnNextButton() throws InterruptedException {
+    public ResumePage clickNextButton() throws InterruptedException {
 
         Thread.sleep(3000);
         getWd().element(By.id(NEXT_BUTTON)).bringElementInView().waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
-        return new YourAvailabilityPage9();
+        return new ResumePage();
 
 
     }
-
 }

@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 
     public class ApplicationSummaryPage extends BasePage {
 
-    private static final String SUBMIT = " ";
+    private static final String SUBMIT = "//input[@type='submit']";
 
     public ApplicationSummaryPage clickOnSubmitButton() {
 

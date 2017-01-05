@@ -18,7 +18,9 @@ public class SubmitApplication  extends WebBaseTest{
         .selectJob(userDetails.getJobName()).fillIdentificationDetails(userDetails).
                 clickOnUSA().clickOnESIGNATUREANDTERMS().selectDropDownValues(userDetails).checkTermsAndConditions()
         .clickOnDisclosure().clickOnAuthorization().clickNextButton().clickOnNextButton().checkAvailability
-                (userDetails).enterDetails(userDetails);
+                (userDetails).enterDetails(userDetails).enterUserDetails(userDetails).clickOnNextButton()
+        .selectWoodChuck().clickOnSubmitButton();
+        Application.getWebdriver().quit();
 
     }
 }
