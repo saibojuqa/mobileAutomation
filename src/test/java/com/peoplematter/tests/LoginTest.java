@@ -4,8 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
 import com.peoplematter.modulesList.LoginPage;
 import com.peoplematter.modulesList.modules.pojos.Manage;
-import com.peoplematter.modulesList.manage.pages.ManagePage;
-import com.peoplematter.modulesList.manage.pojos.Manage;
 import com.peoplematter.utils.dataProvider.DataProviderArguments;
 import lombok.extern.log4j.Log4j;
 import org.testng.Assert;
