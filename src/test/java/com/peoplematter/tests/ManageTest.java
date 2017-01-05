@@ -3,8 +3,8 @@ package com.peoplematter.tests;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
 import com.peoplematter.modulesList.LoginPage;
-import com.peoplematter.modulesList.modules.pages.ManagePage;
-import com.peoplematter.modulesList.modules.pojos.Manage;
+import com.peoplematter.modulesList.manage.pages.ManagePage;
+import com.peoplematter.modulesList.manage.pojos.Manage;
 import com.peoplematter.utils.dataProvider.DataProviderArguments;
 import lombok.extern.log4j.Log4j;
 import org.testng.Assert;
@@ -26,12 +26,10 @@ public class ManageTest extends BaseTest {
 
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T1")
-    //114806-completed
     public void testIcons(Map<String, String> testData) throws IOException {
         LoginPage loginPage = new LoginPage();
         Manage manage = mapper.readValue(testData.get("data"), Manage.class);
-        ManagePage managePage = loginPage.enterUserNameAndPassword(manage.getUserName(),
-                manage.getPassword()).clickOnNavigateUpButton().expandManageOptions();
+        ManagePage managePage = loginPage.enterUserNameAndPassword(manage.getUserName(), manage.getPassword()).clickOnNavigateUpButton().expandManageOptions();
         managePage.clickOnMileStonesButton();
         Assert.assertTrue(managePage.isIconDisplayed("Birthday"));
         Assert.assertTrue(managePage.isIconDisplayed("First day"));
@@ -39,10 +37,8 @@ public class ManageTest extends BaseTest {
         Assert.assertTrue(managePage.isIconDisplayed("Milestones"));
     }
 
-    //
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T2")
-    //125263-completed
     public void testInvalidPasswordScenario(Map<String, String> testData) throws IOException {
         LoginPage loginPage = new LoginPage();
         Manage manage = mapper.readValue(testData.get("data"), Manage.class);
