@@ -2,6 +2,7 @@ package com.peoplematter.tests;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
+import com.peoplematter.core.Application;
 import com.peoplematter.modulesList.LoginPage;
 import com.peoplematter.modulesList.modules.pages.ActionItemsPage;
 import com.peoplematter.modulesList.modules.pages.OptionsPage;
@@ -25,8 +26,11 @@ public class ActionItemsTest extends BaseTest {
 
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T3")
+
     //140557-incomplete
     public void testActionItemsVideo(Map<String, String> testData) throws IOException {
+       Application.getAndroidDriver().get("http://qavalidation.com/demo/");
+        System.out.println(Application.getAndroidDriver().getTitle());
         LoginPage loginPage = new LoginPage();
         Manage manage = mapper.readValue(testData.get("data"), Manage.class);
         loginPage.enterUserNameAndPassword(manage.getUserName(),
@@ -40,7 +44,8 @@ public class ActionItemsTest extends BaseTest {
 
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T3")
-    //141442-incomplete
+
+    //141442-complete
     public void testPdfErrorMessage(Map<String, String> testData) throws IOException, InterruptedException {
         LoginPage loginPage = new LoginPage();
         Manage manage = mapper.readValue(testData.get("data"), Manage.class);

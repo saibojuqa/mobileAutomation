@@ -24,7 +24,9 @@ public class ExcelDataProvider {
     public static Iterator<Object[]> getDataFromFile(Method testMethod) throws Exception {
         Map<String, String> arguments = resolveDataProviderArguments(testMethod);
         List<HashMap<String, String>> dataSets = ExcelDataProvider.getDataFromExcel(Application.basedir + "/" + arguments.get("filePath"), arguments.get("sheet"));
+//        log.info("File path is :" + dataSets.get(1));
         List<Object[]> data = new ArrayList<>();
+  
         for (HashMap<String, String> dataSet : dataSets) {
             data.add(new Object[]{dataSet});
         }

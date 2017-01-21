@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [ Automation Suite]">
-  <test name="SC2.0 - UI Automation - TestCases(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.peoplematter.testngTest">
+      <class name="com.peoplematter.tests.LoginTest">
         <methods>
-          <include name="Logger"/>
+          <include name="setup"/>
+          <include name="testInvalidPasswordScenario" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.peoplematter.testngTest -->
+      </class> <!-- com.peoplematter.tests.LoginTest -->
     </classes>
-  </test> <!-- SC2.0 - UI Automation - TestCases(failed) -->
-</suite> <!-- Failed suite [ Automation Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

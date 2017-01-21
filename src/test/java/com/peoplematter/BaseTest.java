@@ -3,6 +3,7 @@ package com.peoplematter;
 import com.peoplematter.Interfaces.Constants;
 import com.peoplematter.core.Application;
 import com.peoplematter.utils.dataProvider.DataProviderArguments;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import java.net.MalformedURLException;
@@ -16,11 +17,17 @@ public class BaseTest extends Application implements Constants {
 
     @BeforeSuite
     public void setup() {
-/*        try {
+        try {
             initAndroidDriver();
         } catch (MalformedURLException e) {
             e.printStackTrace();
-        }*/
+        }
+
+    }
+
+ //   @AfterSuite
+    public void tearDown() {
+        Application.getAndroidDriver().closeApp();
 
     }
 

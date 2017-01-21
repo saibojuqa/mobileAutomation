@@ -19,7 +19,7 @@ import java.util.Map;
 public class LoginTest extends BaseTest {
 
 
-    public static final String FILE_PATH = "/testData/Template.xls";
+    public static final String FILE_PATH = "testData/Template.xls";
     ObjectMapper mapper = new ObjectMapper();
 
 

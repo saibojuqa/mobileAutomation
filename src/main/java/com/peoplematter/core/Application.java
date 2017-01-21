@@ -1,12 +1,14 @@
 package com.peoplematter.core;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 import lombok.extern.log4j.Log4j;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -71,6 +73,10 @@ public class Application {
         capabilities.setCapability(CapabilityType.VERSION, properties.getProperty("version"));
         capabilities.setCapability("platformVersion", properties.getProperty("platformVersion"));
         capabilities.setCapability("app", app.getAbsolutePath());
+     //   capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+     //   capabilities.setCapability("appPackage", "com.android.chrome");
+      //  capabilities.setCapability("appActivity", "com.google.android.apps.chrome.Main");
+
         // The URL where the hub will start
         driver = new AndroidDriver(new URL(properties.getProperty("url")), capabilities);
         // need to remove below line
