@@ -3,6 +3,8 @@ package com.peoplematter.selenium;
 import lombok.extern.log4j.Log4j;
 import org.openqa.selenium.*;
 
+import java.util.List;
+
 @Log4j
 public class FluentElement {
 
@@ -45,6 +47,10 @@ public class FluentElement {
 
     public WebElement getElement() {
         return WebElementProvider.get(searchContext).getElement(this);
+    }
+
+    public List<WebElement> getElements(){
+        return searchContext.findElements(by);
     }
 
     public void click() {

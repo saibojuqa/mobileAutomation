@@ -4,6 +4,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import lombok.extern.log4j.Log4j;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -27,7 +28,7 @@ public class Application {
     public static String basedir;
     private static String appConfigFileLocation;
     private static String confDir = ".";
-    private static AndroidDriver driver;
+    public static AndroidDriver driver;
     private static WebDriver webdriver;
 
     static {
@@ -64,7 +65,7 @@ public class Application {
     }
 
     protected AndroidDriver initAndroidDriver() throws MalformedURLException {
-        File appDir = new File(properties.getProperty("appDir"));
+       File appDir = new File(properties.getProperty("appDir"));
         File app = new File(appDir, properties.getProperty("app"));
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device", properties.getProperty("device"));
@@ -73,10 +74,10 @@ public class Application {
         capabilities.setCapability(CapabilityType.VERSION, properties.getProperty("version"));
         capabilities.setCapability("platformVersion", properties.getProperty("platformVersion"));
         capabilities.setCapability("app", app.getAbsolutePath());
-     //   capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-     //   capabilities.setCapability("appPackage", "com.android.chrome");
-      //  capabilities.setCapability("appActivity", "com.google.android.apps.chrome.Main");
-
+   //     capabilities.setCapability("appium-version", "1.1");
+          //capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+          //capabilities.setCapability("appPackage", "com.android.chrome");
+         //capabilities.setCapability("appActivity", "com.google.android.apps.chrome.Main");
         // The URL where the hub will start
         driver = new AndroidDriver(new URL(properties.getProperty("url")), capabilities);
         // need to remove below line
@@ -101,7 +102,7 @@ public class Application {
         }
     }
 
-    public void quitWebDiver(){
+    public void quitWebDiver() {
         webdriver.close();
         webdriver.quit();
     }
@@ -126,5 +127,29 @@ public class Application {
         InternetExplorerDriver internetExplorerDriver = new InternetExplorerDriver();
         webdriver = internetExplorerDriver;
     }
+
+    protected void initWebAndroidDriver() throws MalformedURLException {
+
+        DesiredCapabilities capabilities=DesiredCapabilities.android();
+        capabilities.setCapability(MobileCapabilityType.BROWSER_NAME,BrowserType.CHROME);
+        capabilities.setCapability(MobileCapabilityType.PLATFORM,Platform.ANDROID);
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"1115fb45a8c01303");
+        capabilities.setCapability(MobileCapabilityType.VERSION,"6.0.1");
+
+
+       
+
+        // The URL where the hub will start
+        URL url= new URL("http://127.0.0.1:4723/wd/hub");
+        WebDriver driver = new AndroidDriver(url, capabilities);
+        //driver = new AndroidDriver(new URL(properties.getProperty("url")), capabilities);
+        //driver.get("https://ua-login.peoplematter.com");
+        driver.get("http://www.facebook.com");
+        // need to remove below line
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+        //return driver;
+    }
+
 
 }

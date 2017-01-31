@@ -1,6 +1,7 @@
 package com.peoplematter.modulesList.modules.pages;
 
 import com.peoplematter.pageObjects.BasePage;
+import org.openqa.selenium.By;
 
 import static org.openqa.selenium.By.className;
 import static org.openqa.selenium.By.id;
@@ -18,6 +19,9 @@ public class Homepage extends BasePage {
     private static final String UPCOMING_TEXT = "//android.widget.TextView[@text='Upcoming']";
     private static final String APPLICANTS_TAB = "//android.widget.TextView[@text='Applicants']";
     private static final String APPLICANTSLAST14DAYS= "//android.widget.TextView[@text='Applicants Last 14 Days']";
+    private static final String SIGNOUT_BUTTON = "//android.widget.TextView[@text='Sign Out']";
+    private static final String YES_BUTTON = "//android.widget.Button[@text='Yes']";
+
 
     public Homepage() {
         getfd().element(className(HOMEPAGE_CONTAINER)).waitUntil(MAX_TIME).ifElementIsNotDisplayed();
@@ -41,11 +45,21 @@ public class Homepage extends BasePage {
         return this;
     }
 
-
     public boolean isApplicantsInLast14DaysVisible() {
         return getfd().element(xpath(APPLICANTSLAST14DAYS)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
     }
 
+    public Homepage clickOnSignOutButton(){
+        getfd().element(By.xpath(SIGNOUT_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
+    }
+
+    public Homepage clickOnYesButton() {
+        getfd().element(By.xpath(YES_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
+    }
+
+//((AndroidDriver)driver).scrollTo(Learn).click();
 }
 
 

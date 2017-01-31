@@ -25,61 +25,64 @@ public class ContactsPage extends BasePage {
     private static final String SEARCH_BUTTON = "com.peoplematter.android:id/search_edit_text";
     private static final String MARY_BALDWIN = "//android.widget.TextView[@text='Mary Baldwin']";
     private static final String BACKBUTTON = "//android.widget.ImageButton";
-    private static final String DOCUMENT_PHOTO_UPLOAD = "//android.widget.Textview[contains(@resource-id,'com.peoplematter.android:id/list_header2_text') and @text='Document photo upload']";
+    private static final String DOCUMENT_PHOTO_UPLOAD ="//android.widget.TextView[@text='%s']";
     private static final String VIEW_DOCUMENT_DETAILS = "//android.widget.TextView[@text='View document details']";
-    private static final String VERIFY_FILE = "com.peoplematter.android:id/manager_employee_document_list_item_document_name";
+    private static final String VERIFY_FILE = "//android.widget.TextView[@text='%s']";
 
 
-    public ContactsPage clickOnLocation() throws InterruptedException {
-        Thread.sleep(3000);
+    public ContactsPage clickOnLocation() {
         getfd().element(By.id(LOCATION)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
-    public ContactsPage clickOnLocationName() throws InterruptedException {
-        Thread.sleep(3000);
+    public ContactsPage clickOnLocationName()  {
         getfd().element(By.xpath(LOCATION_NAME)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
 
-    public ContactsPage clickOnSearchButton() throws InterruptedException {
-        Thread.sleep(3000);
+    public ContactsPage clickOnSearchButton()  {
         getfd().element(By.id(SEARCH_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
-    public ContactsPage enterContactName() throws InterruptedException {
-        Thread.sleep(3000);
+    public ContactsPage enterContactName()  {
         getfd().element(By.id(SEARCH_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().sendKeys("Mary Baldwin");
 
         return this;
     }
 
-    public ContactsPage clickOnMaryBaldwin() throws InterruptedException {
-        Thread.sleep(3000);
+    public ContactsPage clickOnMaryBaldwin()  {
         getfd().element(By.xpath(MARY_BALDWIN)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         getfd().element(By.xpath(BACKBUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         getfd().element(By.xpath(MARY_BALDWIN)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
-    public ContactsPage clickOnViewDocumentDetails() throws InterruptedException {
-        Thread.sleep(3000);
-        getfd().element(By.xpath(DOCUMENT_PHOTO_UPLOAD)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+
+    public ContactsPage clickOnBackButton()  {
+        getfd().element(By.xpath(BACKBUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+
+        return this;
+    }
+
+    public ContactsPage clickOnViewDocumentDetails() {
+        getfd().element(By.xpath(String.format(DOCUMENT_PHOTO_UPLOAD,"Document photo upload"))).getElements().forEach
+                (WebElement::click);
+        // getfd().element(By.xpath(DOCUMENT_PHOTO_UPLOAD)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         getfd().element(By.xpath(VIEW_DOCUMENT_DETAILS)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
-    public ContactsPage verifyUploadedFile() throws InterruptedException {
-        Thread.sleep(3000);
-        getfd().element(By.xpath(VERIFY_FILE)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
+    public ContactsPage verifyUploadedFile() {
+
+        getfd().element(By.xpath(String.format(VERIFY_FILE, "MaryBaldwinOther.jpeg"))).isDisplayed();
         return this;
     }
 
-    public ContactsPage maryBaldwinIsDisplayed() throws InterruptedException {
-        Thread.sleep(3000);
-        getfd().element(By.xpath(MARY_BALDWIN)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
+    public ContactsPage maryBaldwinIsDisplayed() {
+
+        getfd().element(By.xpath(MARY_BALDWIN)).isDisplayed();
         return this;
 
     }

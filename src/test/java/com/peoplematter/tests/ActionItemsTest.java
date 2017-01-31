@@ -27,25 +27,36 @@ public class ActionItemsTest extends BaseTest {
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T3")
 
-    //140557-incomplete
-    public void testActionItemsVideo(Map<String, String> testData) throws IOException {
+    //140557-complete
+    public void testVideoActionItem(Map<String, String> testData) throws IOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        Manage manage = mapper.readValue(testData.get("data"), Manage.class);
+        loginPage.enterUserNameAndPassword(manage.getUserName(),
+                manage.getPassword()).clickOnNavigateUpButton().clickOnNavigateUpButton();
+        ActionItemsPage actionItemsPage = new OptionsPage().clickOnActionItems();
+        actionItemsPage.verifyDateIsDisplayed().verifyDescription().clickOnVideoSaiButton().clickOnCheckBox()
+                .clickOnSaveButton().clickOnCompletedTab().verifyVideoSaiText();
+
+
+    }
+
+   /* public void testActionItemsVideo(Map<String, String> testData) throws IOException {
        Application.getAndroidDriver().get("http://qavalidation.com/demo/");
         System.out.println(Application.getAndroidDriver().getTitle());
         LoginPage loginPage = new LoginPage();
         Manage manage = mapper.readValue(testData.get("data"), Manage.class);
         loginPage.enterUserNameAndPassword(manage.getUserName(),
                 manage.getPassword()).clickOnNavigateUpButton().clickOnNavigateUpButton();
-
         ActionItemsPage actionItemsPage = new OptionsPage().clickOnActionItems();
-        Assert.assertTrue(actionItemsPage.isDescriptionVisible(testData.get("description1")));
-                        Assert.assertTrue(actionItemsPage.isDescriptionVisible(testData.get("description2")));
-        Assert.assertTrue(actionItemsPage.isDescriptionVisible(testData.get("description3")));
-    }
+*/
+
+
 
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T3")
 
     //141442-complete
+
     public void testPdfErrorMessage(Map<String, String> testData) throws IOException, InterruptedException {
         LoginPage loginPage = new LoginPage();
         Manage manage = mapper.readValue(testData.get("data"), Manage.class);
@@ -57,4 +68,22 @@ public class ActionItemsTest extends BaseTest {
     }
 
 
-}
+    //140554 - completed
+    @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
+    @DataProviderArguments(filePath = FILE_PATH, sheetName = "T3")
+
+    public void AcknowledgeAMessageUi(Map<String, String> testData) throws IOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        Manage manage = mapper.readValue(testData.get("data"), Manage.class);
+        loginPage.enterUserNameAndPassword(manage.getUserName(),
+                manage.getPassword()).clickOnNavigateUpButton().clickOnNavigateUpButton();
+        ActionItemsPage actionItemsPage = new OptionsPage().clickOnActionItems();
+        actionItemsPage.verifyDateIsDisplayed().verifyDescription().clickOnMessageSaiButton().verifyDisplayedMesssage().clickOnCheckBox()
+                .clickOnSaveButton().clickOnCompletedTab().verifyMessageSaiText();
+
+
+    }
+
+
+
+    }

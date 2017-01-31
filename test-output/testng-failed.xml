@@ -6,7 +6,7 @@
       <class name="com.peoplematter.tests.LoginTest">
         <methods>
           <include name="setup"/>
-          <include name="testInvalidPasswordScenario" invocation-numbers="0"/>
+          <include name="testInvalidPasswordScenario"/>
         </methods>
       </class> <!-- com.peoplematter.tests.LoginTest -->
     </classes>

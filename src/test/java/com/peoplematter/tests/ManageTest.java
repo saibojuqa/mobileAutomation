@@ -27,7 +27,7 @@ public class ManageTest extends BaseTest {
 
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T1")
-    //114806//
+    //114806-completed
     public void testIcons(Map<String, String> testData) throws IOException, InterruptedException {
         LoginPage loginPage = new LoginPage();
         Manage manage = mapper.readValue(testData.get("data"), Manage.class);
@@ -39,7 +39,7 @@ public class ManageTest extends BaseTest {
         Assert.assertTrue(managePage.isIconDisplayed("Milestones"));
     }
 
-    /* 121567 - Functional */
+    /* 121567 - completed */
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T6")
     public void testFunctionalityAndSettings(Map<String, String> testData) throws IOException, InterruptedException {
@@ -58,7 +58,8 @@ public class ManageTest extends BaseTest {
         Assert.assertTrue(homepage.isApplicantsInLast14DaysVisible(), "Last 14 days applicants are not visible");
         homepage.clickOnNavigateUpButton();
         managePage.clickOnContactsButton();
-        contactsPage.clickOnLocation().clickOnLocationName().enterContactName().clickOnMaryBaldwin().maryBaldwinIsDisplayed();
+        contactsPage.clickOnLocation().clickOnLocationName().enterContactName().clickOnMaryBaldwin()
+                .maryBaldwinIsDisplayed().clickOnBackButton();
         homepage.clickOnNavigateUpButton();
         hirePage.clickOnI9Button();
         contactsPage.clickOnLocation().clickOnLocationName();
@@ -76,8 +77,7 @@ public class ManageTest extends BaseTest {
         schedulePage.clickOnTimeoffButton();
 
     }
-
-
+    //118691 - completed
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
     public void ViewDocumentUpload(Map<String, String> testData) throws IOException, InterruptedException {
@@ -91,6 +91,33 @@ public class ManageTest extends BaseTest {
                 .verifyUploadedFile();
 
     }
+
+    // 59011 - complete
+    @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
+    @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
+    public void checkTheBubbles(Map<String, String> testData) throws IOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        ContactsPage contactsPage = new ContactsPage();
+        Manage manage = mapper.readValue(testData.get("data"), Manage.class);
+        MBULearnPage mbuLearnPage = new MBULearnPage();
+        ManagePage managePage = loginPage.enterUserNameAndPassword(manage.getUserName(), manage.getPassword()).
+                clickOnNavigateUpButton().expandManageOptions();
+        Homepage homepage = managePage.clickOnHomeButton();
+        contactsPage.clickOnLocation().clickOnLocationName();
+        Assert.assertTrue(homepage.isDateVisible(), "Date is not visible");
+        Assert.assertTrue(homepage.isUpcomingTextVisible(), "Upcoming text is not visible");
+        managePage.verifyCoursesOverdueText().verifyCurrentlyWorkingText().verifyShiftOfferText().verifyTimeOfferText();
+        homepage.clickOnNavigateUpButton();
+        mbuLearnPage.swipeBottomToTop();
+        homepage.clickOnSignOutButton().clickOnYesButton();
+
+
+    }
+
+
+
+
+
 
 
 

@@ -32,6 +32,20 @@ public class LoginPage extends BasePage {
         return this;
     }
 
+    public Homepage enterMarryAsUNANdPW() {
+        getfd().input(id(USER_EMAIL)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().sendKeys("Mary@baldwin.com");
+        getfd().input(id(USER_PASSWORD)).sendKeys("Password1");
+        getfd().button(id(SIGN_BUTTON)).click();
+        return new Homepage();
+    }
+
+
+
+
+
+
+
+
     public String getErrorMessage() {
         return getfd().element(id(ERROR_MESSAGE)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().getText();
 
