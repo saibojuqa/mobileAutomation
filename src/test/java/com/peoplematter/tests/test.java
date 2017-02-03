@@ -10,6 +10,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.peoplematter.core.Application;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
@@ -31,7 +32,6 @@ public class test {
 	        //capabilities.setCapability("appActivity", "com.google.android.browser/.BrowserMainActivity");
 
 	        WebDriver driver= new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-
 	        driver.get("http://learn-automation.com/");
 
 	}

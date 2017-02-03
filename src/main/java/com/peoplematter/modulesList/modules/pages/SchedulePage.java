@@ -1,5 +1,6 @@
 package com.peoplematter.modulesList.modules.pages;
 
+import com.peoplematter.core.Application;
 import com.peoplematter.pageObjects.BasePage;
 import com.sun.webkit.ContextMenu;
 import org.openqa.selenium.By;
@@ -34,6 +35,12 @@ public class SchedulePage extends BasePage {
     private static final String FIVEAM_SIXPM = "//android.widget.Button[@text='5:00 AM – 6:00 PM']";
     private static final String FRIDAY_ROSTER = "//android.widget.TextView[@text='Fri']";
     private static final String SHIFT_OFFER_PENDING_TEXT = "//android.widget.TextView[@text='Shift offer pending']";
+    private static final String THURSDAY_ROSTER = "//android.widget.TextView[@text='Thu']";
+    private static final String WEDNESDAY_ROSTER = "//android.widget.TextView[@text='Wed']";
+    private static final String SATURDAY_ROSTER = "//android.widget.TextView[@text='Sat']";
+    private static final String SHIFT_OFFER_WITH_NO_VOLUNTEERS = "com.peoplematter.android:id/home_upcoming_section_shift_offers";
+    private static final String ONE_SHIFT_OFFER_PENDING_TEXT = "//android.widget.TextView[@text='1 Shift offer " +
+            "pending']";
 
     public SchedulePage clickOnRosterButton() {
         getfd().element(By.xpath(ROSTER_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
@@ -42,6 +49,21 @@ public class SchedulePage extends BasePage {
 
     public SchedulePage clickOnFridayRoster(){
         getfd().element(By.xpath(FRIDAY_ROSTER)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
+    }
+
+    public SchedulePage clickOnThursdayRoster(){
+        getfd().element(By.xpath(THURSDAY_ROSTER)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
+    }
+
+    public SchedulePage clickOnWednesdayRoster(){
+        getfd().element(By.xpath(WEDNESDAY_ROSTER)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
+    }
+
+    public SchedulePage clickOnSaturdayRoster(){
+        getfd().element(By.xpath(SATURDAY_ROSTER)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
@@ -186,6 +208,30 @@ public SchedulePage clickOnFiveAmToSixAm() {
     return this;
 
 }
+    public static boolean checkOfferedNotExist()
+    {
+        try{
+
+            WebElement ele= Application.getAndroidDriver().findElement(By.id("//test"));
+            System.out.println("If Offered Button is displayed");
+            return true;
+
+        }catch(Throwable e){}
+        System.out.println("Offered Button Is not displayed");
+        return false;
+    }
+
+    public SchedulePage verifyShiftOfferWithNoVolunteers(){
+        getfd().element(By.id(SHIFT_OFFER_WITH_NO_VOLUNTEERS)).waitUntil(MAX_TIME).ifElementIsNotDisplayed()
+                .isDisplayed();
+        return this;
+    }
+
+    public SchedulePage verifyOneShiftOfferPendingText(){
+        getfd().element(By.xpath(ONE_SHIFT_OFFER_PENDING_TEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed()
+                .isDisplayed();
+        return this;
+    }
 
 
 }

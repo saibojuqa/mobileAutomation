@@ -137,16 +137,11 @@ public class Application {
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"1115fb45a8c01303");
         capabilities.setCapability(MobileCapabilityType.VERSION,"6.0.1");
 
+        driver = new AndroidDriver(new URL(properties.getProperty("url")), capabilities);
+        getAndroidDriver().get("https://qa-prod.peoplematter.com");
 
-       
+        //driver.get("https://qa-prod.peoplematter.com");
 
-        // The URL where the hub will start
-        URL url= new URL("http://127.0.0.1:4723/wd/hub");
-        WebDriver driver = new AndroidDriver(url, capabilities);
-        //driver = new AndroidDriver(new URL(properties.getProperty("url")), capabilities);
-        //driver.get("https://ua-login.peoplematter.com");
-        driver.get("http://www.facebook.com");
-        // need to remove below line
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         //return driver;
     }

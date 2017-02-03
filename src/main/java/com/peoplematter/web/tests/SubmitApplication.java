@@ -20,7 +20,7 @@ public class SubmitApplication  extends WebBaseTest{
         .clickOnDisclosure().clickOnAuthorization().clickNextButton().clickOnNextButton().checkAvailability
                 (userDetails).enterDetails(userDetails).enterUserDetails(userDetails).clickOnNextButton()
         .selectWoodChuck().clickOnSubmitButton();
-        Application.getWebdriver().quit();
+//        Application.getWebdriver().quit();
 
     }
 }

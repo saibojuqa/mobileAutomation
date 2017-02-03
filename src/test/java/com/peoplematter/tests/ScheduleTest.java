@@ -4,10 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
 import com.peoplematter.core.Application;
 import com.peoplematter.modulesList.LoginPage;
-import com.peoplematter.modulesList.modules.pages.ContactsPage;
-import com.peoplematter.modulesList.modules.pages.Homepage;
-import com.peoplematter.modulesList.modules.pages.ManagePage;
-import com.peoplematter.modulesList.modules.pages.SchedulePage;
+import com.peoplematter.modulesList.modules.pages.*;
 import com.peoplematter.modulesList.modules.pojos.Manage;
 import com.peoplematter.utils.dataProvider.DataProviderArguments;
 import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
@@ -44,10 +41,7 @@ public class ScheduleTest extends BaseTest {
            homepage.clickOnNavigateUpButton();
            schedulePage.clickOnScheduleButton().checkOfferedTextInBlueColor().clickOnFiveAmToSixAm().clickOnRemoveText().
                    clickOnRemoveButton().verifyTextDisplayed();
-
-
     }
-
 
     //58769 - complete
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
@@ -67,9 +61,7 @@ public class ScheduleTest extends BaseTest {
         loginPage.enterMarryAsUNANdPW().clickOnNavigateUpButton();
          schedulePage.clickOnScheduleButton().verifyAvailabeBanner().clickOnFiveAmToSixAm().verifyTextDisplayed().verifyDate()
                  .verifyJobPosition();
-
     }
-
 
 //58782 - complete
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
@@ -115,8 +107,8 @@ public void offerShiftLogInAndOut(Map<String, String> testData) throws IOExcepti
     homepage.clickOnNavigateUpButton();
     schedulePage.clickOnScheduleButton();
     schedulePage.checkOfferedTextInBlueColor();
-
 }
+
 
 //58730 - completed -
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
@@ -136,8 +128,8 @@ public void viewScheduleWithOfferedAndAvailableShifts(Map<String, String> testDa
     schedulePage.clickOnScheduleButton().clickOnFiveAmToSixAm().checkOfferedTextInBlueColor().verifyAvailabeBanner();
 }
 
-//58731 - completed (Check if shift offer is removed or not)
 
+//58731 - completed (Check if shift offer is removed or not)
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
 public void viewScheduleWhenShiftOfferedByOthers(Map<String, String> testData) throws IOException {
@@ -154,8 +146,8 @@ public void viewScheduleWhenShiftOfferedByOthers(Map<String, String> testData) t
     homepage.clickOnNavigateUpButton().clickOnSignOutButton().clickOnYesButton();
     loginPage.enterMarryAsUNANdPW().clickOnNavigateUpButton();
     schedulePage.clickOnScheduleButton().verifyAvailabeBanner();
-
 }
+
 
 //59199-incomplete
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
@@ -174,6 +166,7 @@ public void shiftOfferCreated(Map<String, String> testData) throws IOException {
     //should get notification in mgr mobile and click on that noification
 
 }
+
 
 //58921 - completed
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
@@ -194,6 +187,97 @@ public void rosterOfferedShift(Map<String, String> testData) throws IOException 
 }
 
 
+//58922-incomplete
+    @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
+    @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
+    public void colleagueRescindsShift(Map<String, String> testData) throws IOException {
+        LoginPage loginPage = new LoginPage();
+        ContactsPage contactsPage = new ContactsPage();
+        SchedulePage schedulePage = new SchedulePage();
+        Homepage homepage = new Homepage();
+        Manage manage = mapper.readValue(testData.get("data"), Manage.class);
+        loginPage.enterUserNameAndPassword(manage.getUserName(),
+                manage.getPassword()).clickOnNavigateUpButton();
+        schedulePage.clickOnRosterButton().clickOnFridayRoster().clickOnEightAmToNinePm().clickOnOfferButton()
+                .enterAComment().clickOnSendButton();
+        contactsPage.clickOnBackButton();
+        schedulePage.verifyShiftOfferPendingText();
+        contactsPage.clickOnBackButton();
+        homepage.clickOnNavigateUpButton().clickOnSignOutButton().clickOnYesButton();
+        loginPage.enterMarryAsUNANdPW().clickOnNavigateUpButton();
+        schedulePage.clickOnRosterButton().clickOnFridayRoster().clickOnEightAmToNinePm().acceptShift().enterAComment
+                ().clickOnSendButton().verifyYouDidText();
+        contactsPage.clickOnBackButton();
+        contactsPage.clickOnBackButton();
+        homepage.clickOnNavigateUpButton().clickOnSignOutButton().clickOnYesButton();
+        loginPage.enterUserNameAndPassword(manage.getUserName(),
+                manage.getPassword()).clickOnNavigateUpButton();
+        schedulePage.clickOnRosterButton().clickOnFridayRoster().clickOnEightAmToNinePm().clickOnRemoveText()
+                .clickOnRemoveButton();
+        contactsPage.clickOnBackButton();
+        homepage.clickOnNavigateUpButton().clickOnSignOutButton().clickOnYesButton();
+        loginPage.enterMarryAsUNANdPW().clickOnNavigateUpButton();
+        schedulePage.clickOnRosterButton().clickOnFridayRoster().checkOfferedNotExist();
+
+        //Notification should be seen
+    }
+
+
+    //65368 - completed
+    @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
+    @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
+    public void switchingBetweenNoShiftOfferToShiftOffer(Map<String, String> testData) throws IOException {
+        LoginPage loginPage = new LoginPage();
+        ContactsPage contactsPage = new ContactsPage();
+        SchedulePage schedulePage = new SchedulePage();
+        Homepage homepage = new Homepage();
+        Manage manage = mapper.readValue(testData.get("data"), Manage.class);
+        loginPage.enterUserNameAndPassword(manage.getUserName(),
+                manage.getPassword()).clickOnNavigateUpButton();
+        schedulePage.clickOnRosterButton().clickOnWednesdayRoster().clickOnThursdayRoster().clickOnFridayRoster()
+                .clickOnSaturdayRoster();
+
+    }
+
+    //59132 - completed
+
+    @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
+    @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
+    public void increaseInShiftOfferVolunteers(Map<String, String> testData) throws IOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        ContactsPage contactsPage = new ContactsPage();
+        SchedulePage schedulePage = new SchedulePage();
+        MBULearnPage mbuLearnPage = new MBULearnPage();
+        ManagePage managePage = new ManagePage();
+        Homepage homepage = new Homepage();
+        Manage manage = mapper.readValue(testData.get("data"), Manage.class);
+        loginPage.enterUserNameAndPassword(manage.getUserName(),
+                manage.getPassword()).clickOnNavigateUpButton();
+        schedulePage.clickOnScheduleButton().clickOnFiveAmToSixAm().clickOnOfferButton().enterAComment()
+                .clickOnSendButton();
+        contactsPage.clickOnBackButton().clickOnBackButton();
+        homepage.clickOnNavigateUpButton().clickOnSignOutButton().clickOnYesButton();
+        loginPage.enterMBUAsUNANdPW();
+        homepage.clickOnNavigateUpButton();
+        managePage.clickOnHomeButton();
+        contactsPage.clickOnLocation().clickOnLocationName();
+        schedulePage.verifyShiftOfferWithNoVolunteers();
+        homepage.clickOnNavigateUpButton();
+        mbuLearnPage.swipeBottomToTop();
+        homepage.clickOnSignOutButton().clickOnYesButton();
+        loginPage.enterMarryAsUNANdPW();
+        homepage.clickOnNavigateUpButton();
+        loginPage.enterMarryAsUNANdPW().clickOnNavigateUpButton();
+        schedulePage.clickOnScheduleButton().clickOnFiveAmToSixAm().acceptShift().clickOnSendButton().verifyYouDidText();
+        contactsPage.clickOnBackButton().clickOnBackButton();
+        homepage.clickOnNavigateUpButton().clickOnSignOutButton().clickOnYesButton();
+        loginPage.enterMBUAsUNANdPW();
+        homepage.clickOnNavigateUpButton();
+        managePage.clickOnHomeButton();
+        contactsPage.clickOnLocation().clickOnLocationName();
+        schedulePage.verifyOneShiftOfferPendingText();
+
+    }
 
 }
 

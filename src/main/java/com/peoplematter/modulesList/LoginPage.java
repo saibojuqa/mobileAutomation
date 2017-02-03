@@ -39,9 +39,12 @@ public class LoginPage extends BasePage {
         return new Homepage();
     }
 
-
-
-
+    public Homepage enterMBUAsUNANdPW() {
+        getfd().input(id(USER_EMAIL)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().sendKeys("mobile@businessunit.com");
+        getfd().input(id(USER_PASSWORD)).sendKeys("Password1");
+        getfd().button(id(SIGN_BUTTON)).click();
+        return new Homepage();
+    }
 
 
 

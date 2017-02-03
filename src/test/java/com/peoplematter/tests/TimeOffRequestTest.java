@@ -4,10 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
 import com.peoplematter.core.Application;
 import com.peoplematter.modulesList.LoginPage;
-import com.peoplematter.modulesList.modules.pages.Homepage;
-import com.peoplematter.modulesList.modules.pages.MBULearnPage;
-import com.peoplematter.modulesList.modules.pages.SchedulePage;
-import com.peoplematter.modulesList.modules.pages.TimeOffRequestPage;
+import com.peoplematter.modulesList.modules.pages.*;
 import com.peoplematter.modulesList.modules.pojos.Manage;
 import com.peoplematter.utils.dataProvider.DataProviderArguments;
 import io.appium.java_client.AppiumDriver;
@@ -51,9 +48,20 @@ public class TimeOffRequestTest extends BaseTest {
 
     }
 
+//106042
+@Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
+@DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
+public void noTimeOffBubble(Map<String, String> testData) throws IOException, InterruptedException {
+    LoginPage loginPage = new LoginPage();
+    Homepage homepage = new Homepage();
+    SchedulePage schedulePage = new SchedulePage();
+    TimeOffRequestPage timeOffRequestPage = new TimeOffRequestPage();
+    ManagePage managePage = new ManagePage();
+    MBULearnPage mbuLearnPage = new MBULearnPage();
+    Manage manage = mapper.readValue(testData.get("data"), Manage.class);
+    loginPage.enterUserNameAndPassword(manage.getUserName(),
+            manage.getPassword());
+    timeOffRequestPage.checkElementExist();
 
-
-
-
-
+}
 }

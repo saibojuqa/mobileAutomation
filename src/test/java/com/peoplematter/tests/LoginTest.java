@@ -23,10 +23,9 @@ public class LoginTest extends BaseTest {
     ObjectMapper mapper = new ObjectMapper();
 
 
-
+    //125623- completed
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T2")
-    //125623- completed
     public void testInvalidPasswordScenario(Map<String, String> testData) throws IOException {
         LoginPage loginPage = new LoginPage();
         Manage manage = mapper.readValue(testData.get("data"), Manage.class);
@@ -34,13 +33,17 @@ public class LoginTest extends BaseTest {
         log.info(errorMessage);
         Assert.assertEquals(errorMessage, "Oops! Please check your username and password.");
         Assert.assertEquals(loginPage.getDilogTitle(), "Sign In");
-
     }
 
 
+//124959 - incomplete
+@Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
+@DataProviderArguments(filePath = FILE_PATH, sheetName = "T2")
+public void UpgradingFromNewClient(Map<String, String> testData) throws IOException {
+    LoginPage loginPage = new LoginPage();
+    Manage manage = mapper.readValue(testData.get("data"), Manage.class);
 
 
-
-
+}
 
 }
