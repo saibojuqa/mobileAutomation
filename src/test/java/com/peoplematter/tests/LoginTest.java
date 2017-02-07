@@ -42,6 +42,7 @@ public class LoginTest extends BaseTest {
 public void UpgradingFromNewClient(Map<String, String> testData) throws IOException {
     LoginPage loginPage = new LoginPage();
     Manage manage = mapper.readValue(testData.get("data"), Manage.class);
+    loginPage.enterMBUAsUNANdPW();
 
 
 }

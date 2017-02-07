@@ -46,7 +46,12 @@ public class LoginPage extends BasePage {
         return new Homepage();
     }
 
-
+    public Homepage enterDougAsUNANdPW() {
+        getfd().input(id(USER_EMAIL)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().sendKeys("doug@baldwin.com");
+        getfd().input(id(USER_PASSWORD)).sendKeys("Password1");
+        getfd().button(id(SIGN_BUTTON)).click();
+        return new Homepage();
+    }
 
 
     public String getErrorMessage() {

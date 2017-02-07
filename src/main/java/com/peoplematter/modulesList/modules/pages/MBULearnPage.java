@@ -75,9 +75,4 @@ public void swipeBottomToTop() throws InterruptedException {
 
 }
 
-
-
-
-
-
 }

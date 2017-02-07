@@ -159,7 +159,7 @@ public class SchedulePage extends BasePage {
 
     public SchedulePage enterAComment() {
 
-        getfd().element(By.id(ENTER_A_COMMENT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().sendKeys("Hi This is Test");
+        getfd().element(By.id(ENTER_A_COMMENT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().sendKeys("Hi this is test");
         return this;
 
     }

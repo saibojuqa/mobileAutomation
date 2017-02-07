@@ -147,4 +147,24 @@ public class Application {
     }
 
 
+    protected AndroidDriver initMobileAndroidDriver() throws MalformedURLException {
+
+
+
+        DesiredCapabilities capabilities = DesiredCapabilities.android();
+        capabilities.setCapability("BrowserName", "Android");
+        capabilities.setCapability("deviceName", "emulator-5554");
+        capabilities.setCapability("platformversion", "6.0");
+        capabilities.setCapability("platformName", "ANDROID");
+        capabilities.setCapability("app", "/Users/sai.boju/Desktop/all_apk/peopleMatter-debug-qa-prod.apk");
+        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+        return driver;
+
+    }
+
+
+
+
+
 }

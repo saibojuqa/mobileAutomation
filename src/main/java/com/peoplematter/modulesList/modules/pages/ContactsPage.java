@@ -25,7 +25,7 @@ public class ContactsPage extends BasePage {
     private static final String SEARCH_BUTTON = "com.peoplematter.android:id/search_edit_text";
     private static final String MARY_BALDWIN = "//android.widget.TextView[@text='Mary Baldwin']";
     private static final String BACKBUTTON = "//android.widget.ImageButton";
-    private static final String DOCUMENT_PHOTO_UPLOAD ="//android.widget.TextView[@text='%s']";
+    private static final String DOCUMENT_PHOTO_UPLOAD ="//android.widget.TextView[@text='Document photo upload']";
     private static final String VIEW_DOCUMENT_DETAILS = "//android.widget.TextView[@text='View document details']";
     private static final String VERIFY_FILE = "//android.widget.TextView[@text='%s']";
 
@@ -67,9 +67,9 @@ public class ContactsPage extends BasePage {
     }
 
     public ContactsPage clickOnViewDocumentDetails() {
-        getfd().element(By.xpath(String.format(DOCUMENT_PHOTO_UPLOAD,"Document photo upload"))).getElements().forEach
-                (WebElement::click);
-        // getfd().element(By.xpath(DOCUMENT_PHOTO_UPLOAD)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+       // getfd().element(By.xpath(String.format(DOCUMENT_PHOTO_UPLOAD,"Document photo upload"))).getElements().forEach
+            //    (WebElement::click);
+        getfd().element(By.xpath(DOCUMENT_PHOTO_UPLOAD)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         getfd().element(By.xpath(VIEW_DOCUMENT_DETAILS)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }

@@ -18,8 +18,9 @@ public class BaseTest extends Application implements Constants {
     @BeforeSuite
     public void setup() {
         try {
-            initAndroidDriver();
+           initAndroidDriver();
             //initWebAndroidDriver();
+            //initMobileAndroidDriver();
        } catch (MalformedURLException e) {
            e.printStackTrace();
         }

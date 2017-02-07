@@ -30,6 +30,7 @@ public class TimeOffRequestTest extends BaseTest {
 
 
     //59201 - complete
+    //plus button issue
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
     public void TimeOffCreated(Map<String, String> testData) throws IOException, InterruptedException {
@@ -48,7 +49,7 @@ public class TimeOffRequestTest extends BaseTest {
 
     }
 
-//106042
+//106042 - completed
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
 public void noTimeOffBubble(Map<String, String> testData) throws IOException, InterruptedException {
@@ -64,4 +65,44 @@ public void noTimeOffBubble(Map<String, String> testData) throws IOException, In
     timeOffRequestPage.checkElementExist();
 
 }
+
+
+    //59417 - working on it
+    @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
+    @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
+    public void shiftOfferRequestsByManager(Map<String, String> testData) throws IOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        Homepage homepage = new Homepage();
+        ContactsPage contactsPage = new ContactsPage();
+        SchedulePage schedulePage = new SchedulePage();
+        MBULearnPage mbuLearnPage = new MBULearnPage();
+        TimeOffRequestPage timeOffRequestPage = new TimeOffRequestPage();
+        Manage manage = mapper.readValue(testData.get("data"), Manage.class);
+        loginPage.enterUserNameAndPassword(manage.getUserName(),
+                manage.getPassword()).clickOnNavigateUpButton();
+        timeOffRequestPage.clickOnTimeOffRequest().clickOnPlusButton().clickOnStartsDate().scrollUntilStartDate()
+                .clickOnOKButton().clickOnEndDate().clickOnEndDateSelector().clickOnOKButton();
+        schedulePage.enterAComment().clickOnSendButton();
+        timeOffRequestPage.verifyTimeOffRequestedText().clickOnOKButton();
+        contactsPage.clickOnBackButton();
+        loginPage.enterDougAsUNANdPW().clickOnNavigateUpButton();
+        timeOffRequestPage.clickOnTimeOffRequest();
+        contactsPage.clickOnLocationName().clickOnLocationName();
+        timeOffRequestPage.clickOnPendingRequest().clickOnApproveButton();
+        schedulePage.enterAComment();
+        timeOffRequestPage.clickOnApproveText().verifyApprovedTimeOffText().verifyAdditionalRequestsText();
+        schedulePage.verifyDate();
+        contactsPage.clickOnBackButton();
+        timeOffRequestPage.clickOnPendingRequest().clickOnDenyButton();
+        schedulePage.enterAComment();
+        timeOffRequestPage.clickOnDenyText().verifyDeniedTimeOffRequest().verifyAdditionalRequestsText();
+        schedulePage.verifyDate();
+        contactsPage.clickOnBackButton();
+        homepage.clickOnNavigateUpButton();
+        mbuLearnPage.swipeBottomToTop();
+        homepage.clickOnSignOutButton().clickOnYesButton();
+
+    }
+
+
 }

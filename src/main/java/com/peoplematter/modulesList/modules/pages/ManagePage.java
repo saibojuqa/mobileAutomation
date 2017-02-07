@@ -1,5 +1,6 @@
 package com.peoplematter.modulesList.modules.pages;
 
+import com.peoplematter.modulesList.modules.pojos.Manage;
 import com.peoplematter.pageObjects.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -20,7 +21,27 @@ public class ManagePage extends BasePage {
     private static final String COURSES_OVERDUE_TEXT = "com.peoplematter.android:id/home_today_section_overdue_learn";
     private static final String SHIFT_OFFER_TEXT = "com.peoplematter.android:id/home_upcoming_section_shift_offers";
     private static final String TIME_OFFER_TEXT = "com.peoplematter.android:id/home_upcoming_section_pending_time_off";
+    private static final String Message_to_Alpharetta_only_RADIOBUTTON = "//android.widget.TextView[@text='Contacts']";
+    private static final String VERIFY_COMMENT = "//android.widget.TextView[@text='Hi this is test']";
+    private static final String MANAGER_POSTED_NEW_MESSAGE = "//android.widget.TextView[@text='Your manager posted a new message']";
 
+
+    public ManagePage verifyYourMAnagerPostedNewMessageText(){
+        getfd().element(By.xpath(MANAGER_POSTED_NEW_MESSAGE)).waitUntil(MAX_TIME).ifElementIsNotDisplayed()
+                .isDisplayed();
+        return this;
+    }
+
+
+    public ManagePage verifyComment(){
+        getfd().element(By.xpath(VERIFY_COMMENT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
+        return this;
+    }
+
+    public ManagePage sendMessageToThatLocationOnly(){
+        getfd().element(By.xpath(Message_to_Alpharetta_only_RADIOBUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
+    }
 
 
     public  ManagePage clickOnMileStonesButton() throws InterruptedException{
@@ -70,6 +91,10 @@ public class ManagePage extends BasePage {
         getfd().element(By.id(TIME_OFFER_TEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
         return this;
     }
+
+
+
+
 
 
 }

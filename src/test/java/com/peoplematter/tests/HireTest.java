@@ -27,6 +27,8 @@ public class HireTest extends BaseTest {
     ObjectMapper mapper = new ObjectMapper();
 
     // 136089-completed-put location in this
+    //cannot see applicants button
+    //write for download application
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T4")

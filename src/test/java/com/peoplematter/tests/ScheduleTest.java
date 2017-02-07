@@ -43,7 +43,9 @@ public class ScheduleTest extends BaseTest {
                    clickOnRemoveButton().verifyTextDisplayed();
     }
 
-    //58769 - complete
+
+    //remove the shift offered before
+    //58769 - completed
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
     public void offerShiftWIthComments(Map<String, String> testData) throws IOException {
@@ -63,7 +65,11 @@ public class ScheduleTest extends BaseTest {
                  .verifyJobPosition();
     }
 
-//58782 - complete
+
+
+    // remove the shift which is offered before
+
+//58782 - completed
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
 public void acceptShiftOfferwithoutComments(Map<String, String> testData) throws IOException {
@@ -86,7 +92,7 @@ public void acceptShiftOfferwithoutComments(Map<String, String> testData) throws
     schedulePage.clickOnScheduleButton().verifyRequestedText();
 }
 
-//58746 - complete
+//58746 - completed
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
 public void offerShiftLogInAndOut(Map<String, String> testData) throws IOException {
@@ -108,9 +114,9 @@ public void offerShiftLogInAndOut(Map<String, String> testData) throws IOExcepti
     schedulePage.clickOnScheduleButton();
     schedulePage.checkOfferedTextInBlueColor();
 }
+///remove offer
 
-
-//58730 - completed -
+//58730 - completed
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
 public void viewScheduleWithOfferedAndAvailableShifts(Map<String, String> testData) throws IOException {
@@ -125,11 +131,11 @@ public void viewScheduleWithOfferedAndAvailableShifts(Map<String, String> testDa
             .clickOnSendButton();
     contactsPage.clickOnBackButton().clickOnBackButton();
     homepage.clickOnNavigateUpButton();
-    schedulePage.clickOnScheduleButton().clickOnFiveAmToSixAm().checkOfferedTextInBlueColor().verifyAvailabeBanner();
+    schedulePage.clickOnScheduleButton().checkOfferedTextInBlueColor().verifyAvailabeBanner();
 }
 
 
-//58731 - completed (Check if shift offer is removed or not)
+//58731 - completed ( offer should be removed )
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
 public void viewScheduleWhenShiftOfferedByOthers(Map<String, String> testData) throws IOException {
@@ -149,7 +155,7 @@ public void viewScheduleWhenShiftOfferedByOthers(Map<String, String> testData) t
 }
 
 
-//59199-incomplete
+//59199- incomplete
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
 public void shiftOfferCreated(Map<String, String> testData) throws IOException {
@@ -240,7 +246,7 @@ public void rosterOfferedShift(Map<String, String> testData) throws IOException 
     }
 
     //59132 - completed
-
+    //manage - homepage
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
     public void increaseInShiftOfferVolunteers(Map<String, String> testData) throws IOException, InterruptedException {

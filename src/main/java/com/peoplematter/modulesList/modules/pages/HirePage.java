@@ -20,6 +20,8 @@ public class HirePage extends BasePage {
 
     private static final String I9FORMBUTTON = "//android.widget.TextView[@text='%s']";
     private static final String I9FORMTEXT = "//android.widget.Textview[@text='Form I-9']";
+
+
     public HirePage clickOnApplication(String applicantName) {
         getfd().element(By.xpath(String.format(APPLICANT_NAME, applicantName))).waitUntil(MAX_TIME)
                 .ifElementIsNotDisplayed().click();

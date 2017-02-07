@@ -4,6 +4,8 @@ import com.peoplematter.pageObjects.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import javax.smartcardio.ATR;
+
 /**
  * Created by sai.boju on 2/1/17.
  */
@@ -17,10 +19,22 @@ public class RecruitingPage extends BasePage {
     private static String VERIFY_SAVE_BUTTON = "//android.widget.TextView[@text='Save']";
     private static String REQUISITION_NUMBER = "com.peoplematter.android:id/req_number";
     private static String PENDING_BUTTON = "//android.widget.RadioButton[@text='Pending']";
-    private static String OPEN_BUTTON = "//android.widget.RadioButton[@text='Pending']";
+    private static String OPEN_BUTTON = "//android.widget.RadioButton[@text='Open']";
     private static String NO_RADIO_BUTTON = "//android.widget.RadioButton[@text='No']";
     private static String YES_RADIO_BUTTON = "//android.widget.RadioButton[@text='Yes']";
+    private static String ALL_OPEN_BUTTON = "//android.widget.RadioButton[@text='All open']";
+    private static String ALL_PENDING_BUTTON = "//android.widget.RadioButton[@text='All pending']";
 
+
+   public RecruitingPage clockOnAllOpenButton(){
+    getfd().element(By.xpath(ALL_OPEN_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+       return this;
+   }
+
+    public RecruitingPage clickOnAllPendingButton(){
+        getfd().element(By.xpath(ALL_PENDING_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
+    }
 
     public RecruitingPage clickOnRequisitionButton(){
     getfd().

@@ -21,7 +21,7 @@ public class Homepage extends BasePage {
     private static final String APPLICANTSLAST14DAYS= "//android.widget.TextView[@text='Applicants Last 14 Days']";
     private static final String SIGNOUT_BUTTON = "//android.widget.TextView[@text='Sign Out']";
     private static final String YES_BUTTON = "//android.widget.Button[@text='Yes']";
-
+    private static final String STATUS_BAR = "android:id/statusBarBackground";
 
     public Homepage() {
         getfd().element(className(HOMEPAGE_CONTAINER)).waitUntil(MAX_TIME).ifElementIsNotDisplayed();
@@ -58,6 +58,14 @@ public class Homepage extends BasePage {
         getfd().element(By.xpath(YES_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
+
+    public Homepage clickAndHoldStatusBar(){
+      //  getfd().element(By.id(STATUS_BAR)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().clickAndHold();
+        return this;
+    }
+
+
+
 
 //((AndroidDriver)driver).scrollTo(Learn).click();
 }
