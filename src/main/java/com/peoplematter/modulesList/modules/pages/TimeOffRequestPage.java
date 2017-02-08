@@ -4,9 +4,16 @@ import com.peoplematter.core.Application;
 import com.peoplematter.pageObjects.BasePage;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.SwipeElementDirection;
+import io.appium.java_client.android.AndroidDriver;
 import org.apache.poi.ss.formula.functions.T;
+import org.apache.xpath.SourceTree;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.internal.TouchAction;
+
+import java.util.List;
 
 /**
  * Created by sai.boju on 1/30/17.
@@ -14,7 +21,7 @@ import org.openqa.selenium.WebElement;
 public class TimeOffRequestPage extends BasePage {
 
     private static final String TIMEOFFFRERQUEST_BUTTON = "//android.widget.TextView[@text='Time Off']";
-    private static final String PLUS_BUTTON = "//android.widget.ImageView";
+    private static final String PLUS_BUTTON = "com.peoplematter.android:id/fab";
     private static final String STARTS_DAY = "com.peoplematter.android:id/start_date_button";
     private static final String END_DAY = "com.peoplematter.android:id/end_date_button";
     private static final String START_DATE_SELECTOR = "23 March 2017";
@@ -34,6 +41,13 @@ public class TimeOffRequestPage extends BasePage {
     private static final String APPROVED_TIMEOFF_TEXT = "//android.widget.TextView[@text='Approved time off']";
     private static final String DENIED_TIMEOFF_TEXT = "//android.widget.TextView[@text='Denied time off']";
     private static final String ADDITIONAL_REQUESTS = "com.peoplematter.android:id/list_header_text";
+
+
+    public TimeOffRequestPage clickOnPlusButton() {
+
+       getfd().element(By.id(PLUS_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
+    }
 
 
     public TimeOffRequestPage verifyAdditionalRequestsText(){
@@ -81,10 +95,7 @@ public class TimeOffRequestPage extends BasePage {
         return this;
     }
 
-    public TimeOffRequestPage clickOnPlusButton() {
-        getfd().element(By.xpath(PLUS_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
-        return this;
-    }
+
 
     public TimeOffRequestPage clickOnStartsDate() {
         getfd().element(By.id(STARTS_DAY)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();

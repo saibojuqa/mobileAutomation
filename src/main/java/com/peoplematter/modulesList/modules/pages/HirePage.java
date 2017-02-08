@@ -15,16 +15,31 @@ import java.util.HashMap;
  */
 public class HirePage extends BasePage {
 
-    private static final String APPLICANT_NAME = "//android.widget.TextView[@text='%s']";
+    private static final String APPLICANT_BUTTON = "//android.widget.TextView[@text='%s']";
     private static final String VIEW_JOB_APPLICATION_LINK = "//android.widget.TextView[@text='View job application']";
 
     private static final String I9FORMBUTTON = "//android.widget.TextView[@text='%s']";
     private static final String I9FORMTEXT = "//android.widget.Textview[@text='Form I-9']";
+    private static final String APPLICATION = "com.peoplematter.android:id/item_container";
+    private static final String DOWNLOAD_FULL_JOB = "//android.widget.TextView[@text='Download full job application']";
 
 
-    public HirePage clickOnApplication(String applicantName) {
-        getfd().element(By.xpath(String.format(APPLICANT_NAME, applicantName))).waitUntil(MAX_TIME)
-                .ifElementIsNotDisplayed().click();
+    public HirePage clickOnDownloadFullJobApplication(){
+        getfd().element(By.xpath(DOWNLOAD_FULL_JOB)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
+    }
+
+
+public HirePage clickOnNEwApplication(){
+    getfd().element(By.id(APPLICATION)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+    return this;
+}
+
+
+    public HirePage clickOnApplicatButton() {
+        getfd().
+                element(By.xpath(String.format(APPLICANT_BUTTON, "Applicants"))).getElements().forEach
+                (WebElement::click);
         return this;
     }
 

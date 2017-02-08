@@ -1,5 +1,7 @@
 package com.peoplematter.tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
 import com.peoplematter.modulesList.LoginPage;
@@ -31,19 +33,19 @@ public class LoginTest extends BaseTest {
         Manage manage = mapper.readValue(testData.get("data"), Manage.class);
         String errorMessage = loginPage.enterUserNameandPassword(manage.getUserName(), manage.getPassword()).getErrorMessage();
         log.info(errorMessage);
-        Assert.assertEquals(errorMessage, "Oops! Please check your username and password.");
-        Assert.assertEquals(loginPage.getDilogTitle(), "Sign In");
+        AssertJUnit.assertEquals(errorMessage, "Oops! Please check your username and password.");
+        AssertJUnit.assertEquals(loginPage.getDilogTitle(), "Sign In");
     }
 
 
-//124959 - incomplete
+//124959 - workingOnIt
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 @DataProviderArguments(filePath = FILE_PATH, sheetName = "T2")
 public void UpgradingFromNewClient(Map<String, String> testData) throws IOException {
     LoginPage loginPage = new LoginPage();
     Manage manage = mapper.readValue(testData.get("data"), Manage.class);
     loginPage.enterMBUAsUNANdPW();
-
+//needs upgrade from client
 
 }
 

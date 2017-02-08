@@ -1,5 +1,6 @@
 package com.peoplematter.tests;
 
+import org.testng.annotations.Test;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
 import com.peoplematter.core.Application;
@@ -76,10 +77,12 @@ public void noTimeOffBubble(Map<String, String> testData) throws IOException, In
         ContactsPage contactsPage = new ContactsPage();
         SchedulePage schedulePage = new SchedulePage();
         MBULearnPage mbuLearnPage = new MBULearnPage();
+        ManagePage managePage = new ManagePage();
         TimeOffRequestPage timeOffRequestPage = new TimeOffRequestPage();
         Manage manage = mapper.readValue(testData.get("data"), Manage.class);
         loginPage.enterUserNameAndPassword(manage.getUserName(),
                 manage.getPassword()).clickOnNavigateUpButton();
+        managePage.expandMobileBusinessUnit();
         timeOffRequestPage.clickOnTimeOffRequest().clickOnPlusButton().clickOnStartsDate().scrollUntilStartDate()
                 .clickOnOKButton().clickOnEndDate().clickOnEndDateSelector().clickOnOKButton();
         schedulePage.enterAComment().clickOnSendButton();

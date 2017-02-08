@@ -1,5 +1,7 @@
 package com.peoplematter.tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
 import com.peoplematter.modulesList.LoginPage;
@@ -33,14 +35,13 @@ public class ManageTest extends BaseTest {
         Manage manage = mapper.readValue(testData.get("data"), Manage.class);
         ManagePage managePage = loginPage.enterUserNameAndPassword(manage.getUserName(), manage.getPassword()).clickOnNavigateUpButton().expandManageOptions();
         managePage.clickOnMileStonesButton();
-        Assert.assertTrue(managePage.isIconDisplayed("Birthday"));
-        Assert.assertTrue(managePage.isIconDisplayed("First day"));
-        Assert.assertTrue(managePage.isIconDisplayed("Anniversary"));
-        Assert.assertTrue(managePage.isIconDisplayed("Milestones"));
+        AssertJUnit.assertTrue(managePage.isIconDisplayed("Birthday"));
+        AssertJUnit.assertTrue(managePage.isIconDisplayed("First day"));
+        AssertJUnit.assertTrue(managePage.isIconDisplayed("Anniversary"));
+        AssertJUnit.assertTrue(managePage.isIconDisplayed("Milestones"));
     }
 
     /* 121567 - completed */
-    //check
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T6")
     public void testFunctionalityAndSettings(Map<String, String> testData) throws IOException, InterruptedException {
@@ -61,12 +62,10 @@ public class ManageTest extends BaseTest {
         managePage.clickOnContactsButton();
         contactsPage.clickOnLocation().clickOnLocationName().enterContactName().clickOnMaryBaldwin()
                 .maryBaldwinIsDisplayed().clickOnBackButton();
-        //back button not working
         homepage.clickOnNavigateUpButton();
         hirePage.clickOnI9Button();
         contactsPage.clickOnLocation().clickOnLocationName();
         homepage.clickOnNavigateUpButton();
-        // overdue
         mbuLearnPage.clickOnCourseButton().checkOverdueText();
         homepage.clickOnNavigateUpButton();
         mbuLearnPage.clickOnCompletedButton().checkWithinLast7DaysText();
@@ -80,8 +79,7 @@ public class ManageTest extends BaseTest {
         schedulePage.clickOnTimeoffButton();
 
     }
-    //118691 - incomplete
-    //not clicking on document upload button
+    //118691 - complete
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
     public void ViewDocumentUpload(Map<String, String> testData) throws IOException, InterruptedException {
@@ -131,28 +129,27 @@ public class ManageTest extends BaseTest {
     }
 
 
-//75537 - incomplete
-    //verify
+//75537 - complete
+
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
 public void createFeedItem(Map<String, String> testData) throws IOException, InterruptedException {
     LoginPage loginPage = new LoginPage();
     SchedulePage schedulePage = new SchedulePage();
     Homepage homepage = new Homepage();
+    ContactsPage contactsPage = new ContactsPage();
+    MessagePage messagePage = new MessagePage();
     MBULearnPage mbuLearnPage = new MBULearnPage();
     TimeOffRequestPage timeOffRequestPage = new TimeOffRequestPage();
     Manage manage = mapper.readValue(testData.get("data"), Manage.class);
     ManagePage managePage = loginPage.enterUserNameAndPassword(manage.getUserName(), manage.getPassword()).clickOnNavigateUpButton().expandManageOptions();
-     timeOffRequestPage.clickOnPlusButton();
-    managePage.sendMessageToThatLocationOnly();
+    messagePage.clickOnMessageIcon();
+    contactsPage.clickOnLocation().clickOnLocationName();
+    timeOffRequestPage.clickOnPlusButton();
     schedulePage.enterAComment().clickOnSendButton();
     managePage.verifyComment();
-    // homepage.clickAndHoldStatusBar();
-    //swipe from top to bottom
-   // managePage.verifyYourMAnagerPostedNewMessageText();
-
-
-
+    homepage.ClickAndHold();
+    managePage.verifyYourMAnagerPostedNewMessageText();
 }
 
 }

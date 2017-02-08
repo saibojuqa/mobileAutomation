@@ -1,5 +1,6 @@
 package com.peoplematter;
 
+import org.testng.annotations.AfterMethod;
 import com.peoplematter.Interfaces.Constants;
 import com.peoplematter.core.Application;
 import com.peoplematter.utils.dataProvider.DataProviderArguments;
@@ -27,7 +28,8 @@ public class BaseTest extends Application implements Constants {
     }
 
     //   @AfterSuite
-    public void tearDown() {
+    @AfterMethod
+	public void tearDown() {
         Application.getAndroidDriver().closeApp();
     }
 }

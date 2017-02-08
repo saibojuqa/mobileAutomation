@@ -1,5 +1,6 @@
 package com.peoplematter.tests;
 
+import org.testng.annotations.Test;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
 import com.peoplematter.modulesList.LoginPage;
@@ -19,8 +20,7 @@ public class RecruitingTest extends BaseTest {
     public static final String FILE_PATH = "/testData/Template.xls";
     ObjectMapper mapper = new ObjectMapper();
 
-    //123559 - incomplete
-    //did not click on req, status
+    //123559 - completed
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
     public void viewDocumentUpload(Map<String, String> testData) throws IOException, InterruptedException {
@@ -47,7 +47,6 @@ public class RecruitingTest extends BaseTest {
 
 
     //122862 - incomplete
-
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
     public void searchByRequisition(Map<String, String> testData) throws IOException, InterruptedException {
@@ -61,7 +60,7 @@ public class RecruitingTest extends BaseTest {
         OptionsPage managePage = loginPage.enterUserNameAndPassword(manage.getUserName(), manage.getPassword()).
                 clickOnNavigateUpButton();
         recruitingPage.clickOnRequisitionButton();
-
+        // search bar is not enabled
 
     }
 }

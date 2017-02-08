@@ -1,5 +1,9 @@
 package com.peoplematter.tests;
 
+import com.peoplematter.modulesList.modules.pages.ContactsPage;
+import com.peoplematter.modulesList.modules.pages.HirePage;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
 import com.peoplematter.modulesList.LoginPage;
@@ -26,21 +30,23 @@ public class HireTest extends BaseTest {
     public static final String FILE_PATH = "/testData/Template.xls";
     ObjectMapper mapper = new ObjectMapper();
 
-    // 136089-completed-put location in this
-    //cannot see applicants button
-    //write for download application
+    // 136089-completed
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T4")
-    public void testApplicantApplication(Map<String, String> testData) throws IOException, InterruptedException {
+    public void ViewFullApplication(Map<String, String> testData) throws IOException, InterruptedException {
         LoginPage loginPage = new LoginPage();
+        HirePage hirePage = new HirePage();
         Manage manage = mapper.readValue(testData.get("data"), Manage.class);
+        ContactsPage contactsPage = new ContactsPage();
         ManagePage managePage = loginPage.enterUserNameAndPassword(manage.getUserName(),
                 manage.getPassword()).clickOnNavigateUpButton().expandManageOptions();
-        boolean isVisible = managePage.clickOnApplicantsButton().clickOnApplication(testData.get("applicantName"))
-                .clickOnViewJobApplicationLink().isApplicantPageVisible();
-        Assert.assertTrue(isVisible, "Applicant page is not visible");
+        hirePage.clickOnApplicatButton();
+        contactsPage.clickOnLocation().clickOnLocationName();
+        hirePage.clickOnNEwApplication().clickOnDownloadFullJobApplication().clickOnViewJobApplicationLink();
+
     }
+
 
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T5")

@@ -24,6 +24,16 @@ public class ManagePage extends BasePage {
     private static final String Message_to_Alpharetta_only_RADIOBUTTON = "//android.widget.TextView[@text='Contacts']";
     private static final String VERIFY_COMMENT = "//android.widget.TextView[@text='Hi this is test']";
     private static final String MANAGER_POSTED_NEW_MESSAGE = "//android.widget.TextView[@text='Your manager posted a new message']";
+    private static final String MOBILE_BUSINESS_UNIT_EXPAND = "//android.widget.TextView[@text='Mobile BusinessUnit']";
+
+
+
+    public ManagePage expandMobileBusinessUnit(){
+        getfd().element(By.xpath(MOBILE_BUSINESS_UNIT_EXPAND)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
+    }
+
+
 
 
     public ManagePage verifyYourMAnagerPostedNewMessageText(){

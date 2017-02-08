@@ -14,7 +14,7 @@ public class RecruitingPage extends BasePage {
 
     private static final String REQUISITION_BUTTON = "//android.widget.TextView[@text='%s']";
     private static String PENDING_REQUISITION = "com.peoplematter.android:id/item_container";
-    private static String STATUS_BUTTON = "android.widget.TextView=[@text='Status: Pending']";
+    private static String STATUS_BUTTON = "com.peoplematter.android:id/status";
     private static String VERIFY_BACK_BUTTON = "//android.widget.ImageButton";
     private static String VERIFY_SAVE_BUTTON = "//android.widget.TextView[@text='Save']";
     private static String REQUISITION_NUMBER = "com.peoplematter.android:id/req_number";
@@ -38,7 +38,7 @@ public class RecruitingPage extends BasePage {
 
     public RecruitingPage clickOnRequisitionButton(){
     getfd().
-    element(By.xpath(String.format(REQUISITION_BUTTON, "Schedule"))).getElements().forEach(WebElement::click);
+    element(By.xpath(String.format(REQUISITION_BUTTON, "Requisitions"))).getElements().forEach(WebElement::click);
     return this;
 }
 
@@ -49,7 +49,7 @@ public class RecruitingPage extends BasePage {
     }
 
     public RecruitingPage clickOnStatusButton(){
-        getfd().element(By.xpath(STATUS_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        getfd().element(By.id(STATUS_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 

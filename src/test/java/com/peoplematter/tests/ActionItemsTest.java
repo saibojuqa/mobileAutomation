@@ -1,5 +1,7 @@
 package com.peoplematter.tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
 import com.peoplematter.core.Application;
@@ -51,12 +53,9 @@ public class ActionItemsTest extends BaseTest {
 */
 
 
-
+    //141442-completed
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T3")
-
-    //141442-completed
-    //this might need a change to add download the pdf and allow access buttons
 
     public void testPdfErrorMessage(Map<String, String> testData) throws IOException, InterruptedException {
         LoginPage loginPage = new LoginPage();
@@ -65,7 +64,7 @@ public class ActionItemsTest extends BaseTest {
                 manage.getPassword()).clickOnNavigateUpButton().clickOnNavigateUpButton();
 
         ActionItemsPage actionItemsPage = new OptionsPage().clickOnActionItems();
-        Assert.assertTrue(actionItemsPage.clickOnCompletedTab().clickOnPdfButtonAndGetMessage());
+        AssertJUnit.assertTrue(actionItemsPage.clickOnCompletedTab().clickOnPdfButtonAndGetMessage());
     }
 
 

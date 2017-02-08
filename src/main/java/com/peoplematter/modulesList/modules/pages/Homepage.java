@@ -1,7 +1,10 @@
 package com.peoplematter.modulesList.modules.pages;
 
+import com.peoplematter.core.Application;
 import com.peoplematter.pageObjects.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import static org.openqa.selenium.By.className;
 import static org.openqa.selenium.By.id;
@@ -18,7 +21,7 @@ public class Homepage extends BasePage {
     private static final String DATE = "com.peoplematter.android:id/home_section_title";
     private static final String UPCOMING_TEXT = "//android.widget.TextView[@text='Upcoming']";
     private static final String APPLICANTS_TAB = "//android.widget.TextView[@text='Applicants']";
-    private static final String APPLICANTSLAST14DAYS= "//android.widget.TextView[@text='Applicants Last 14 Days']";
+    private static final String APPLICANTSLAST14DAYS = "//android.widget.TextView[@text='Applicants Last 14 Days']";
     private static final String SIGNOUT_BUTTON = "//android.widget.TextView[@text='Sign Out']";
     private static final String YES_BUTTON = "//android.widget.Button[@text='Yes']";
     private static final String STATUS_BAR = "android:id/statusBarBackground";
@@ -49,7 +52,7 @@ public class Homepage extends BasePage {
         return getfd().element(xpath(APPLICANTSLAST14DAYS)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
     }
 
-    public Homepage clickOnSignOutButton(){
+    public Homepage clickOnSignOutButton() {
         getfd().element(By.xpath(SIGNOUT_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
@@ -59,18 +62,24 @@ public class Homepage extends BasePage {
         return this;
     }
 
-    public Homepage clickAndHoldStatusBar(){
-      //  getfd().element(By.id(STATUS_BAR)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().clickAndHold();
-        return this;
+     public Homepage ClickAndHold() throws InterruptedException {
+           Application.getAndroidDriver().findElement(By.xpath("//android.view.View[@index = '1']")).click();
+            MBULearnPage mbuLearnPage = new MBULearnPage();
+            mbuLearnPage.swipeTopToBottom();
+
+            return this;
+
+        }
+
+
     }
 
 
 
 
+
+
 //((AndroidDriver)driver).scrollTo(Learn).click();
-}
-
-
 
 
 

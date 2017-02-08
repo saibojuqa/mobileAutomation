@@ -1,0 +1,33 @@
+<!--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+    &lt;!&ndash; <class name="com.peoplematter.tests.ManageTest"/>
+      <class name="com.peoplematter.tests.HireTest"/>
+      <class name="com.peoplematter.BaseTest"/>
+      <class name="com.peoplematter.tests.RecruitingTest"/>
+      <class name="com.peoplematter.tests.LoginTest"/>
+      <class name="com.peoplematter.tests.TimeOffRequestTest"/>&ndash;&gt;
+      <class name="com.peoplematter.tests.ScheduleTest"/>
+     &lt;!&ndash; <class name="com.peoplematter.tests.ActionItemsTest"/>&ndash;&gt;
+    </classes>
+  </test> &lt;!&ndash; Test &ndash;&gt;
+</suite> &lt;!&ndash; Suite &ndash;&gt;
+-->
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sample Test Suite" verbose="1" >
+    <test name="Method Test Cases" >
+        <classes>
+            <class name="com.peoplematter.tests.LoginTest">
+                <methods>
+                    <include name="testInvalidPasswordScenario" />
+                    <exclude name="addDepartmentTestCase" />
+                    <exclude name="addEmployeeTestCase" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

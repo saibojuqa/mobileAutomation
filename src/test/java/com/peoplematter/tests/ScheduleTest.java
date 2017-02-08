@@ -1,5 +1,6 @@
 package com.peoplematter.tests;
 
+import org.testng.annotations.Test;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
 import com.peoplematter.core.Application;
