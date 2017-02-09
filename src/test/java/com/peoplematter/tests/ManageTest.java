@@ -25,8 +25,6 @@ public class ManageTest extends BaseTest {
     public static final String FILE_PATH = "/testData/Template.xls";
     ObjectMapper mapper = new ObjectMapper();
 
-
-
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T1")
     //114806-completed
@@ -77,8 +75,8 @@ public class ManageTest extends BaseTest {
         schedulePage.clickOnShiftOfferButon();
         homepage.clickOnNavigateUpButton();
         schedulePage.clickOnTimeoffButton();
-
     }
+
     //118691 - complete
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
@@ -91,7 +89,6 @@ public class ManageTest extends BaseTest {
         contactsPage.clickOnLocation().clickOnLocationName().enterContactName().clickOnMaryBaldwin()
                 .clickOnViewDocumentDetails()
                 .verifyUploadedFile();
-
     }
 
     // 59011 - complete
@@ -112,7 +109,6 @@ public class ManageTest extends BaseTest {
         homepage.clickOnNavigateUpButton();
         mbuLearnPage.swipeBottomToTop();
         homepage.clickOnSignOutButton().clickOnYesButton();
-
     }
 
 //114803 - incomplete
@@ -127,7 +123,6 @@ public class ManageTest extends BaseTest {
      //need to select different dates
 
     }
-
 
 //75537 - complete
 

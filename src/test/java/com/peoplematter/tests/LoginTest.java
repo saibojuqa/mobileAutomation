@@ -24,7 +24,6 @@ public class LoginTest extends BaseTest {
     public static final String FILE_PATH = "testData/Template.xls";
     ObjectMapper mapper = new ObjectMapper();
 
-
     //125623- completed
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T2")
@@ -37,7 +36,6 @@ public class LoginTest extends BaseTest {
         AssertJUnit.assertEquals(loginPage.getDilogTitle(), "Sign In");
     }
 
-
 //124959 - workingOnIt
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 @DataProviderArguments(filePath = FILE_PATH, sheetName = "T2")
@@ -48,5 +46,4 @@ public void UpgradingFromNewClient(Map<String, String> testData) throws IOExcept
 //needs upgrade from client
 
 }
-
 }

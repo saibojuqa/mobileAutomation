@@ -29,7 +29,6 @@ public class TimeOffRequestTest extends BaseTest {
 
     AppiumDriver driver ;
 
-
     //59201 - complete
     //plus button issue
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
@@ -47,7 +46,6 @@ public class TimeOffRequestTest extends BaseTest {
                 .clickOnOKButton().clickOnEndDate().clickOnEndDateSelector().clickOnOKButton();
         schedulePage.enterAComment().clickOnSendButton();
         timeOffRequestPage.verifyTimeOffRequestedText().clickOnOKButton();
-
     }
 
 //106042 - completed
@@ -64,9 +62,7 @@ public void noTimeOffBubble(Map<String, String> testData) throws IOException, In
     loginPage.enterUserNameAndPassword(manage.getUserName(),
             manage.getPassword());
     timeOffRequestPage.checkElementExist();
-
 }
-
 
     //59417 - working on it
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
@@ -88,6 +84,7 @@ public void noTimeOffBubble(Map<String, String> testData) throws IOException, In
         schedulePage.enterAComment().clickOnSendButton();
         timeOffRequestPage.verifyTimeOffRequestedText().clickOnOKButton();
         contactsPage.clickOnBackButton();
+        homepage.clickOnNavigateUpButton().clickOnSignOutButton().clickOnYesButton();
         loginPage.enterDougAsUNANdPW().clickOnNavigateUpButton();
         timeOffRequestPage.clickOnTimeOffRequest();
         contactsPage.clickOnLocationName().clickOnLocationName();
@@ -106,6 +103,4 @@ public void noTimeOffBubble(Map<String, String> testData) throws IOException, In
         homepage.clickOnSignOutButton().clickOnYesButton();
 
     }
-
-
 }

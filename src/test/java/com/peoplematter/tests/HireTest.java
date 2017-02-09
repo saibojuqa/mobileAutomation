@@ -47,7 +47,6 @@ public class HireTest extends BaseTest {
 
     }
 
-
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T5")
     //For Web user application//
@@ -61,8 +60,5 @@ public class HireTest extends BaseTest {
         userDetails.setLastName(userDetails.getLastName()+ RandomStringUtils.randomAlphabetic(10));
         SubmitApplication submitApplication=new SubmitApplication();
         submitApplication.submitUserApplication(userDetails);
-
-
-
     }
 }

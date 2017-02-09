@@ -24,8 +24,8 @@ public class TimeOffRequestPage extends BasePage {
     private static final String PLUS_BUTTON = "com.peoplematter.android:id/fab";
     private static final String STARTS_DAY = "com.peoplematter.android:id/start_date_button";
     private static final String END_DAY = "com.peoplematter.android:id/end_date_button";
-    private static final String START_DATE_SELECTOR = "23 March 2017";
-    private static final String END_DATE_SELECTOR = "24 March 2017";
+    private static final String START_DATE_SELECTOR = "25 March 2017";
+    private static final String END_DATE_SELECTOR = "26 March 2017";
     private static final String OK_BUTTON = "//android.widget.Button[@text='OK']";
     private static final String TIMEOFF_REQUESTED_TEXT = "//android.widget.TextView[@text='Time off requested!']";
     private static final String DOUG_BALDWIN_BUTTON = "//android.widget.TextView[@text='Doug Baldwin']";

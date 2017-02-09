@@ -45,7 +45,6 @@ public class ScheduleTest extends BaseTest {
     }
 
 
-    //remove the shift offered before
     //58769 - completed
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
@@ -64,11 +63,13 @@ public class ScheduleTest extends BaseTest {
         loginPage.enterMarryAsUNANdPW().clickOnNavigateUpButton();
          schedulePage.clickOnScheduleButton().verifyAvailabeBanner().clickOnFiveAmToSixAm().verifyTextDisplayed().verifyDate()
                  .verifyJobPosition();
+        contactsPage.clickOnBackButton();
+        homepage.clickOnNavigateUpButton().clickOnSignOutButton().clickOnYesButton();
+        loginPage.enterDougAsUNANdPW().clickOnNavigateUpButton();
+        schedulePage.clickOnScheduleButton().clickOnFiveAmToSixAm().clickOnRemoveText().clickOnRemoveButton();
+
     }
 
-
-
-    // remove the shift which is offered before
 
 //58782 - completed
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
@@ -93,6 +94,7 @@ public void acceptShiftOfferwithoutComments(Map<String, String> testData) throws
     schedulePage.clickOnScheduleButton().verifyRequestedText();
 }
 
+
 //58746 - completed
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
@@ -113,9 +115,9 @@ public void offerShiftLogInAndOut(Map<String, String> testData) throws IOExcepti
             manage.getPassword());
     homepage.clickOnNavigateUpButton();
     schedulePage.clickOnScheduleButton();
-    schedulePage.checkOfferedTextInBlueColor();
+    schedulePage.checkOfferedTextInBlueColor().clickOnFiveAmToSixAm().clickOnRemoveText().clickOnRemoveButton();
+
 }
-///remove offer
 
 //58730 - completed
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
@@ -132,11 +134,13 @@ public void viewScheduleWithOfferedAndAvailableShifts(Map<String, String> testDa
             .clickOnSendButton();
     contactsPage.clickOnBackButton().clickOnBackButton();
     homepage.clickOnNavigateUpButton();
-    schedulePage.clickOnScheduleButton().checkOfferedTextInBlueColor().verifyAvailabeBanner();
+    schedulePage.clickOnScheduleButton().checkOfferedTextInBlueColor().verifyAvailabeBanner().clickOnFiveAmToSixAm()
+            .clickOnRemoveText().clickOnRemoveButton();
+
 }
 
 
-//58731 - completed ( offer should be removed )
+//58731 - completed
 @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
 @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
 public void viewScheduleWhenShiftOfferedByOthers(Map<String, String> testData) throws IOException {
@@ -247,7 +251,6 @@ public void rosterOfferedShift(Map<String, String> testData) throws IOException 
     }
 
     //59132 - completed
-    //manage - homepage
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T8")
     public void increaseInShiftOfferVolunteers(Map<String, String> testData) throws IOException, InterruptedException {

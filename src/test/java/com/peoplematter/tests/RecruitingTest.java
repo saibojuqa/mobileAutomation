@@ -44,8 +44,6 @@ public class RecruitingTest extends BaseTest {
         contactsPage.clickOnBackButton();
     }
 
-
-
     //122862 - incomplete
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
@@ -61,8 +59,5 @@ public class RecruitingTest extends BaseTest {
                 clickOnNavigateUpButton();
         recruitingPage.clickOnRequisitionButton();
         // search bar is not enabled
-
     }
 }
-
-
