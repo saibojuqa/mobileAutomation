@@ -169,7 +169,7 @@ public class ScheduleTest extends BaseTest {
                 .clickOnSendButton();
 
 
-        //should get notification in mgr mobile and click on that noification
+        //should get notification in mgr mobile and click on that notification
     }
 
 
