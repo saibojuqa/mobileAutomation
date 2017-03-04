@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [ Automation Suite]">
-  <test name="SC2.0 - UI Automation - TestCases(failed)">
-    <classes>
-      <class name="com.peoplematter.testngTest">
-        <methods>
-          <include name="Logger"/>
-        </methods>
-      </class> <!-- com.peoplematter.testngTest -->
-    </classes>
-  </test> <!-- SC2.0 - UI Automation - TestCases(failed) -->
+    <test name="SC2.0 - UI Automation - TestCases(failed)">
+        <classes>
+            <class name="com.peoplematter.testngTest">
+                <methods>
+                    <include name="Logger"/>
+                </methods>
+            </class> <!-- com.peoplematter.testngTest -->
+        </classes>
+    </test> <!-- SC2.0 - UI Automation - TestCases(failed) -->
 </suite> <!-- Failed suite [ Automation Suite] -->

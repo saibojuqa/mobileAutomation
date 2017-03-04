@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 /**
  * Created by sai.boju on 12/27/16.
  */
-public class IdentificationPage extends BasePage{
+public class IdentificationPage extends BasePage {
 
     private static final String FIRST_NAME = "person_FirstName";
     private static final String LAST_NAME = "person_LastName";
@@ -14,9 +14,9 @@ public class IdentificationPage extends BasePage{
     private static final String VERIFY_SSN_PIN = "person_VerifyPIN";
     private static final String MONTH = "person_MonthOfBirth";
     private static final String DAY = "person_DayOfBirth";
-    private static final String NEXT_BUTTON="moveNextSection";
+    private static final String NEXT_BUTTON = "moveNextSection";
 
-    public whatToExpectPage fillIdentificationDetails(UserDetails userDetails){
+    public whatToExpectPage fillIdentificationDetails(UserDetails userDetails) {
 
         getWd().element(By.id(FIRST_NAME)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().clear().sendKeys(userDetails
                 .getFirstName());
@@ -31,9 +31,6 @@ public class IdentificationPage extends BasePage{
         getWd().element(By.id(NEXT_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return new whatToExpectPage();
     }
-
-
-
 
 
 }

@@ -6,8 +6,8 @@ package com.peoplematter.Interfaces;
 public interface Constants {
 
     int THIRTY_SECONDS = 30;
-    int MAX_TIME = 35;
-    int TEN_SECONDS=10;
+    int MAX_TIME = 40;
+    int TEN_SECONDS = 10;
 
 
 }

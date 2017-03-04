@@ -15,8 +15,8 @@ import org.openqa.selenium.WebElement;
 public class WaitCondition implements Function<SearchContext, WebElement> {
 
 
-    private WaitType waitType;
     private final By by;
+    private WaitType waitType;
     private SearchContext searchContext;
 
     public WaitCondition(WaitType waitType, By by, SearchContext searchContext) {

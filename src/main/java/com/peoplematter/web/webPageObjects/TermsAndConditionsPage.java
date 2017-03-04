@@ -12,12 +12,12 @@ public class TermsAndConditionsPage extends BasePage {
     private static final String SIGNATURE = "//label[contains(@for,'Signature')]";
     private static final String NEXT_BUTTON = "moveNextSection";
 
-    public DisclosuresPage checkTermsAndConditions() {
+    public TermsAndConditionsPage checkTermsAndConditions() {
 
         getWd().element(By.xpath(TERMS_AND_CONDITIONS)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         getWd().element(By.xpath(SIGNATURE)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         getWd().element(By.id(NEXT_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
-        return new DisclosuresPage();
+        return this;
 
     }
 

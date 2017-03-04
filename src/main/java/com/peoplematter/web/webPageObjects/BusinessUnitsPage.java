@@ -12,9 +12,9 @@ public class BusinessUnitsPage extends BasePage {
     private static final String STATE_INPUT = "State1";
     private static final String ZIPCODE_INPUT = "ZipCode1";
     private static final String BUSINESS_UNITS_PAGE_CONTAINER = "SelectALocationPage";
-    private static final String SEARCH_BUTTON="SelectLocations-SearchButton";
-    private static final String LOCATION_BUTTON="//p[contains(text(),'%s')]/preceding-sibling::h3";
-    private static final String NEXT_BUTTON="moveNextSection";
+    private static final String SEARCH_BUTTON = "SelectLocations-SearchButton";
+    private static final String LOCATION_BUTTON = "//p[contains(text(),'%s')]/preceding-sibling::h3";
+    private static final String NEXT_BUTTON = "moveNextSection";
 
     public BusinessUnitsPage() {
         getWd().element(By.id(BUSINESS_UNITS_PAGE_CONTAINER)).waitUntil(MAX_TIME).ifElementIsNotDisplayed();
@@ -36,8 +36,8 @@ public class BusinessUnitsPage extends BasePage {
         return this;
     }
 
-    public SelectJobsPage selectLocationAndClickNext(String zipCode){
-        getWd().element(By.xpath(String.format(LOCATION_BUTTON,zipCode))).waitUntil(MAX_TIME).ifElementIsNotDisplayed()
+    public SelectJobsPage selectLocationAndClickNext(String zipCode) {
+        getWd().element(By.xpath(String.format(LOCATION_BUTTON, zipCode))).waitUntil(MAX_TIME).ifElementIsNotDisplayed()
                 .click();
         getWd().element(By.id(NEXT_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return new SelectJobsPage();

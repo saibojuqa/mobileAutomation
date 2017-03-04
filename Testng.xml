@@ -18,14 +18,14 @@
 -->
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Sample Test Suite" verbose="1" >
-    <test name="Method Test Cases" >
+<suite name="Sample Test Suite" verbose="1">
+    <test name="Method Test Cases">
         <classes>
             <class name="com.peoplematter.tests.LoginTest">
                 <methods>
-                    <include name="testInvalidPasswordScenario" />
-                    <exclude name="addDepartmentTestCase" />
-                    <exclude name="addEmployeeTestCase" />
+                    <include name="testInvalidPasswordScenario"/>
+                    <exclude name="addDepartmentTestCase"/>
+                    <exclude name="addEmployeeTestCase"/>
                 </methods>
             </class>
         </classes>

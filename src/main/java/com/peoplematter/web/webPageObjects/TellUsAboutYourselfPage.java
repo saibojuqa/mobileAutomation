@@ -16,6 +16,7 @@ public class TellUsAboutYourselfPage extends BasePage {
     private static final String STATE = "//select[@type='enum']";
     private static final String STATE_SELECTION = "//select[@type='enum']/descendant::option[text()='%s']";
     private static final String ZIP_CODE = "//label[contains(text(),'ZIP Code')]/following-sibling::div/input ";
+    private static final String HOME_PHONE = "//label[contains(text(),'Home Phone')]/following-sibling::div/input";
     private static final String CELLPHONE = "//label[contains(text(),'Cell Phone')]/following-sibling::div/input";
     private static final String TEXT_MESSAGE = "//label[@for='isApplicationStatusByTextEnabled']";
     private static final String NEXT_BUTTON = "moveNextSection";
@@ -29,10 +30,19 @@ public class TellUsAboutYourselfPage extends BasePage {
         getWd().select(By.xpath("//select[@type='enum']")).selectByText(userDetails.getState());
         getWd().element(By.xpath(ZIP_CODE)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().clear().sendKeys(userDetails
                 .getZipcode());
-        getWd().element(By.xpath(CELLPHONE)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().clear().sendKeys(RandomStringUtils.randomNumeric(10));
-
+        Thread.sleep(2000);
+        getWd().element(By.xpath(HOME_PHONE)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().clear().sendKeys
+                ("1234567890");
+        getWd().element(By.xpath(CELLPHONE)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().clear().sendKeys
+                (RandomStringUtils.randomNumeric(10));
+        Thread.sleep(2000);
         getWd().element(By.xpath(TEXT_MESSAGE)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         getWd().element(By.id(NEXT_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        Thread.sleep(2000);
+        getWd().element(By.id(NEXT_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        getWd().element(By.id(NEXT_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+
+
         return new TaxCreditEligibilityPage();
     }
 

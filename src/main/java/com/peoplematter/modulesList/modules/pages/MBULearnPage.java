@@ -2,12 +2,8 @@ package com.peoplematter.modulesList.modules.pages;
 
 import com.peoplematter.core.Application;
 import com.peoplematter.pageObjects.BasePage;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.SwipeElementDirection;
-import io.appium.java_client.android.AndroidDriver;
-import org.openqa.selenium.*;
-
-import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 
 
 /**
@@ -32,7 +28,7 @@ public class MBULearnPage extends BasePage {
 
     }
 
-    public MBULearnPage checkOverdueText()  {
+    public MBULearnPage checkOverdueText() {
         getfd().element(By.xpath(OVERDUE_TEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
 
@@ -46,34 +42,33 @@ public class MBULearnPage extends BasePage {
 
     }
 
-  public MBULearnPage checkWithinLast7DaysText() {
+    public MBULearnPage checkWithinLast7DaysText() {
         getfd().element(By.xpath(WITHINLAST7DAYS_TEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
 
     }
 
 
-public void swipeBottomToTop() throws InterruptedException {
+    public void swipeBottomToTop() throws InterruptedException {
 
-    Dimension size = Application.getAndroidDriver().manage().window().getSize();
+        Dimension size = Application.getAndroidDriver().manage().window().getSize();
 
-    System.out.println(size);
+        System.out.println(size);
 
-    //Find swipe start and end point from screen's with and height.
-    //Find starty point which is at bottom side of screen.
-    int starty = (int) (size.height * 0.80);
-    //Find endy point which is at top side of screen.
-    int endy = (int) (size.height * 0.20);
-    //Find horizontal point where you wants to swipe. It is in middle of screen width.
-    int startx = size.width / 2;
-    System.out.println("starty = " + starty + " ,endy = " + endy + " , startx = " + startx);
+        //Find swipe start and end point from screen's with and height.
+        //Find starty point which is at bottom side of screen.
+        int starty = (int) (size.height * 0.80);
+        //Find endy point which is at top side of screen.
+        int endy = (int) (size.height * 0.20);
+        //Find horizontal point where you wants to swipe. It is in middle of screen width.
+        int startx = size.width / 2;
+        System.out.println("starty = " + starty + " ,endy = " + endy + " , startx = " + startx);
 
-    //Swipe from Bottom to Top.
-    Application.getAndroidDriver().swipe(startx, starty, startx, endy, 2000);
-    Thread.sleep(2000);
+        //Swipe from Bottom to Top.
+        Application.getAndroidDriver().swipe(startx, starty, startx, endy, 2000);
+        Thread.sleep(2000);
 
-    // driver.swipe(startx, endy, startx, starty, 3000);
-}
+    }
 
 
     public void swipeTopToBottom() throws InterruptedException {
@@ -96,10 +91,6 @@ public void swipeBottomToTop() throws InterruptedException {
         Thread.sleep(2000);
 
     }
-
-
-
-
 
 
 }

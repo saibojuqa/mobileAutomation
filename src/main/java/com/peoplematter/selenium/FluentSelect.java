@@ -17,16 +17,15 @@ public class FluentSelect {
 
     public FluentSelect(final By by, final WebDriver webDriver, SearchContext searchContext) {
         this.by = by;
-        this.fluentElement = new FluentElement(by, webDriver,searchContext);
+        this.fluentElement = new FluentElement(by, webDriver, searchContext);
         this.driver = webDriver;
     }
 
     public FluentSelect(final By by, final WebDriver webDriver) {
         this.by = by;
-        this.fluentElement = new FluentElement(by, webDriver,webDriver);
+        this.fluentElement = new FluentElement(by, webDriver, webDriver);
         this.driver = webDriver;
     }
-
 
 
     public void selectByText(final String text) {

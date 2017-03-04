@@ -32,5 +32,4 @@ public class UserDetails {
     private String cellphone;
 
 
-
 }

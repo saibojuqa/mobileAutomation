@@ -28,7 +28,7 @@ public class AUTListener extends TestListenerAdapter {
 
     @Override
     public void onTestFailure(ITestResult tr) {
-        Screenshot.takeScreenshot(screenshot_Dir + tr.getInstanceName() +"__"+ tr.getName());
+        Screenshot.takeScreenshot(screenshot_Dir + tr.getInstanceName() + "__" + tr.getName());
         long elapsedTime = tr.getEndMillis() - tr.getStartMillis();
         log.info("elapsed time in seconds is " + (elapsedTime / 1000));
     }
@@ -43,12 +43,10 @@ public class AUTListener extends TestListenerAdapter {
     @Override
     public void onConfigurationFailure(ITestResult tr) {
         super.onConfigurationFailure(tr);
-        Screenshot.takeScreenshot(screenshot_Dir + tr.getInstanceName() +"__"+ tr.getName());
+        Screenshot.takeScreenshot(screenshot_Dir + tr.getInstanceName() + "__" + tr.getName());
         long elapsedTime = tr.getEndMillis() - tr.getStartMillis();
         log.info("elapsed time in seconds is " + (elapsedTime / 1000));
     }
-
-
 
 
 }

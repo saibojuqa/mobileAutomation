@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 /**
  * Created by sai.boju on 1/2/17.
  */
-public class HowMuchToGetPaidPage extends BasePage{
+public class HowMuchToGetPaidPage extends BasePage {
 
 
     private static final String GENERAL = "//label[contains(@for,'answerValue') and contains(text(),'general')" +
@@ -25,7 +25,6 @@ public class HowMuchToGetPaidPage extends BasePage{
         return new TellUsAboutYourselfPage();
 
     }
-
 
 
 }

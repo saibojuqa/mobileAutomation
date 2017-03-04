@@ -1,17 +1,14 @@
 package com.peoplematter.tests;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
-import com.peoplematter.core.Application;
-import com.peoplematter.modulesList.LoginPage;
 import com.peoplematter.modulesList.modules.pages.ActionItemsPage;
+import com.peoplematter.modulesList.modules.pages.LoginPage;
 import com.peoplematter.modulesList.modules.pages.OptionsPage;
 import com.peoplematter.modulesList.modules.pojos.Manage;
 import com.peoplematter.utils.dataProvider.DataProviderArguments;
 import lombok.extern.log4j.Log4j;
-import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -84,6 +81,4 @@ public class ActionItemsTest extends BaseTest {
 
     }
 
-
-
-    }
+}

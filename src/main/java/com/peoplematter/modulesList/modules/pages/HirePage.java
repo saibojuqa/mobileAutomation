@@ -2,13 +2,9 @@ package com.peoplematter.modulesList.modules.pages;
 
 import com.peoplematter.core.Application;
 import com.peoplematter.pageObjects.BasePage;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidKeyCode;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-
-import java.util.HashMap;
 
 /**
  * Created by sai.boju on 12/20/16.
@@ -24,16 +20,16 @@ public class HirePage extends BasePage {
     private static final String DOWNLOAD_FULL_JOB = "//android.widget.TextView[@text='Download full job application']";
 
 
-    public HirePage clickOnDownloadFullJobApplication(){
+    public HirePage clickOnDownloadFullJobApplication() {
         getfd().element(By.xpath(DOWNLOAD_FULL_JOB)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
 
-public HirePage clickOnNEwApplication(){
-    getfd().element(By.id(APPLICATION)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
-    return this;
-}
+    public HirePage clickOnNEwApplication() {
+        getfd().element(By.id(APPLICATION)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
+    }
 
 
     public HirePage clickOnApplicatButton() {
@@ -56,9 +52,9 @@ public HirePage clickOnNEwApplication(){
     }
 
     public HirePage clickOnI9Button() {
-        getfd().element(By.xpath(String.format(I9FORMBUTTON,"I-9"))).getElements().forEach(WebElement::click);
+        getfd().element(By.xpath(String.format(I9FORMBUTTON, "I-9"))).getElements().forEach(WebElement::click);
         // getfd().element(By.xpath(I9FORMBUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
-       // getfd().element(By.xpath(I9FORMTEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
+        // getfd().element(By.xpath(I9FORMTEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
         return this;
 
     }

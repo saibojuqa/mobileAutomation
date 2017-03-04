@@ -9,7 +9,7 @@ public class GetStartedPage extends BasePage {
 
     private static final String GET_STARTED_BUTTON = "GetStartedPage-GetStartedButton";
 
-    public BusinessUnitsPage clickOnGetStartedButton(){
+    public BusinessUnitsPage clickOnGetStartedButton() {
         getWd().element(By.id(GET_STARTED_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return new BusinessUnitsPage();
     }

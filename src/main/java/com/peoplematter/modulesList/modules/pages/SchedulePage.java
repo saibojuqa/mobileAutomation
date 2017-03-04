@@ -2,7 +2,6 @@ package com.peoplematter.modulesList.modules.pages;
 
 import com.peoplematter.core.Application;
 import com.peoplematter.pageObjects.BasePage;
-import com.sun.webkit.ContextMenu;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -27,7 +26,7 @@ public class SchedulePage extends BasePage {
     private static final String VERIFY_TEXT = "com.peoplematter.android:id/text_section_text_1";
     private static final String ENTER_A_COMMENT = "com.peoplematter.android:id/english_comment_box";
     private static final String AVAILABLE_BANNER = "com.peoplematter.android:id/banner_text";
-    private static final String DATE_TEXT = "com.peoplematter.android:id/shift_details_date";
+    private static final String DATE_TEXT = "com.peoplematter.android:id/date_section_dates";
     private static final String JOB_POSITION = "//android.widget.TextView[@text='Cook']";
     private static final String ILDOIT_BUTTON = "android:id/button2";
     private static final String YOU_DONE_IT_TEXT = "com.peoplematter.android:id/text_section_header";
@@ -39,30 +38,49 @@ public class SchedulePage extends BasePage {
     private static final String WEDNESDAY_ROSTER = "//android.widget.TextView[@text='Wed']";
     private static final String SATURDAY_ROSTER = "//android.widget.TextView[@text='Sat']";
     private static final String SHIFT_OFFER_WITH_NO_VOLUNTEERS = "com.peoplematter.android:id/home_upcoming_section_shift_offers";
-    private static final String ONE_SHIFT_OFFER_PENDING_TEXT = "//android.widget.TextView[@text='1 Shift offer " +
-            "pending']";
+    private static final String ONE_SHIFT_OFFER_PENDING_TEXT = "//android.widget.TextView[@text='1 Shift offer pending']";
+    private static final String BACK_ARROW_BUTTON = "android.widget.ImageView";
+
+    public static boolean checkOfferedNotExist() {
+        try {
+
+            WebElement ele = Application.getAndroidDriver().findElement(By.id("//test"));
+            System.out.println("If Offered Button is displayed");
+            return true;
+
+        } catch (Throwable e) {
+        }
+        System.out.println("Offered Button Is not displayed");
+        return false;
+    }
+
+    public SchedulePage clickOnBackArrowButton() {
+        getfd().element(By.className(BACK_ARROW_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
+
+    }
 
     public SchedulePage clickOnRosterButton() {
         getfd().element(By.xpath(ROSTER_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
-    public SchedulePage clickOnFridayRoster(){
+    public SchedulePage clickOnFridayRoster() {
         getfd().element(By.xpath(FRIDAY_ROSTER)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
-    public SchedulePage clickOnThursdayRoster(){
+    public SchedulePage clickOnThursdayRoster() {
         getfd().element(By.xpath(THURSDAY_ROSTER)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
-    public SchedulePage clickOnWednesdayRoster(){
+    public SchedulePage clickOnWednesdayRoster() {
         getfd().element(By.xpath(WEDNESDAY_ROSTER)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
-    public SchedulePage clickOnSaturdayRoster(){
+    public SchedulePage clickOnSaturdayRoster() {
         getfd().element(By.xpath(SATURDAY_ROSTER)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
@@ -72,11 +90,10 @@ public class SchedulePage extends BasePage {
         return this;
     }
 
-    public SchedulePage verifyShiftOfferPendingText(){
+    public SchedulePage verifyShiftOfferPendingText() {
         getfd().element(By.xpath(SHIFT_OFFER_PENDING_TEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
         return this;
     }
-
 
     public SchedulePage clickOnWorkingNowButton() {
         getfd().element(By.xpath(WORKINGNOW_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
@@ -84,13 +101,11 @@ public class SchedulePage extends BasePage {
 
     }
 
-
     public SchedulePage clickOnShiftOfferButon() {
         getfd().element(By.xpath(SHIFTOFFER_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
 
     }
-
 
     public SchedulePage clickOnTimeoffButton() {
         getfd().element(By.xpath(TIMEOFF_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
@@ -158,8 +173,11 @@ public class SchedulePage extends BasePage {
     }
 
     public SchedulePage enterAComment() {
+        //Application.getAndroidDriver().findElement(By.id("com.peoplematter.android:id/english_comment_box"))
+        //.sendKeys("Hi this is test",Keys.ENTER);
 
         getfd().element(By.id(ENTER_A_COMMENT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().sendKeys("Hi this is test");
+        Application.getAndroidDriver().hideKeyboard();
         return this;
 
     }
@@ -199,35 +217,23 @@ public class SchedulePage extends BasePage {
         return this;
     }
 
-public SchedulePage clickOnFiveAmToSixAm() {
+    public SchedulePage clickOnFiveAmToSixAm() {
 
-    // getfd().element(By.xpath(String.format(FIVEAM_SIXPM, "5:00 AM – 6:00 PM"))).getElements().forEach
-          //   (WebElement::click);
+        // getfd().element(By.xpath(String.format(FIVEAM_SIXPM, "5:00 AM – 6:00 PM"))).getElements().forEach
+        //   (WebElement::click);
 
-   getfd().element(By.xpath(FIVEAM_SIXPM)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
-    return this;
+        getfd().element(By.xpath(FIVEAM_SIXPM)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
 
-}
-    public static boolean checkOfferedNotExist()
-    {
-        try{
-
-            WebElement ele= Application.getAndroidDriver().findElement(By.id("//test"));
-            System.out.println("If Offered Button is displayed");
-            return true;
-
-        }catch(Throwable e){}
-        System.out.println("Offered Button Is not displayed");
-        return false;
     }
 
-    public SchedulePage verifyShiftOfferWithNoVolunteers(){
+    public SchedulePage verifyShiftOfferWithNoVolunteers() {
         getfd().element(By.id(SHIFT_OFFER_WITH_NO_VOLUNTEERS)).waitUntil(MAX_TIME).ifElementIsNotDisplayed()
                 .isDisplayed();
         return this;
     }
 
-    public SchedulePage verifyOneShiftOfferPendingText(){
+    public SchedulePage verifyOneShiftOfferPendingText() {
         getfd().element(By.xpath(ONE_SHIFT_OFFER_PENDING_TEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed()
                 .isDisplayed();
         return this;

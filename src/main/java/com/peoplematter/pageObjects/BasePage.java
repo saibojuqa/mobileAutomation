@@ -26,7 +26,7 @@ public class BasePage implements Constants {
         fluentDriver = new FluentDriver(Application.getAndroidDriver());
     }
 
-    public void navigateBackInMobile(){
+    public void navigateBackInMobile() {
         Application.getAndroidDriver().pressKeyCode(AndroidKeyCode.BACK);
     }
 

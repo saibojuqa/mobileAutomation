@@ -1,15 +1,13 @@
 package com.peoplematter.tests;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
-import com.peoplematter.modulesList.LoginPage;
 import com.peoplematter.modulesList.modules.pages.*;
 import com.peoplematter.modulesList.modules.pojos.Manage;
 import com.peoplematter.utils.dataProvider.DataProviderArguments;
 import lombok.extern.log4j.Log4j;
 import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -77,7 +75,7 @@ public class ManageTest extends BaseTest {
         schedulePage.clickOnTimeoffButton();
     }
 
-    //118691 - complete
+    //118691 - completed
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
     public void ViewDocumentUpload(Map<String, String> testData) throws IOException, InterruptedException {
@@ -91,7 +89,7 @@ public class ManageTest extends BaseTest {
                 .verifyUploadedFile();
     }
 
-    // 59011 - complete
+    // 59011 - completed
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
     public void checkTheBubbles(Map<String, String> testData) throws IOException, InterruptedException {
@@ -111,7 +109,7 @@ public class ManageTest extends BaseTest {
         homepage.clickOnSignOutButton().clickOnYesButton();
     }
 
-//114803 - incomplete
+    //114803 - completed
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
     public void selectDifferentDates(Map<String, String> testData) throws IOException, InterruptedException {
@@ -120,31 +118,68 @@ public class ManageTest extends BaseTest {
         ManagePage managePage = loginPage.enterUserNameAndPassword(manage.getUserName(), manage.getPassword()).clickOnNavigateUpButton().expandManageOptions();
         managePage.clickOnMileStonesButton();
         Assert.assertTrue(managePage.isIconDisplayed("Milestones"));
-     //need to select different dates
 
     }
 
-//75537 - complete
+//75537 - completed
 
-@Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
-@DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
-public void createFeedItem(Map<String, String> testData) throws IOException, InterruptedException {
-    LoginPage loginPage = new LoginPage();
-    SchedulePage schedulePage = new SchedulePage();
-    Homepage homepage = new Homepage();
-    ContactsPage contactsPage = new ContactsPage();
-    MessagePage messagePage = new MessagePage();
-    MBULearnPage mbuLearnPage = new MBULearnPage();
-    TimeOffRequestPage timeOffRequestPage = new TimeOffRequestPage();
-    Manage manage = mapper.readValue(testData.get("data"), Manage.class);
-    ManagePage managePage = loginPage.enterUserNameAndPassword(manage.getUserName(), manage.getPassword()).clickOnNavigateUpButton().expandManageOptions();
-    messagePage.clickOnMessageIcon();
-    contactsPage.clickOnLocation().clickOnLocationName();
-    timeOffRequestPage.clickOnPlusButton();
-    schedulePage.enterAComment().clickOnSendButton();
-    managePage.verifyComment();
-    homepage.ClickAndHold();
-    managePage.verifyYourMAnagerPostedNewMessageText();
-}
+    @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
+    @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
+    public void createFeedItem(Map<String, String> testData) throws IOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        SchedulePage schedulePage = new SchedulePage();
+        Homepage homepage = new Homepage();
+        ContactsPage contactsPage = new ContactsPage();
+        MessagePage messagePage = new MessagePage();
+        MBULearnPage mbuLearnPage = new MBULearnPage();
+        TimeOffRequestPage timeOffRequestPage = new TimeOffRequestPage();
+        Manage manage = mapper.readValue(testData.get("data"), Manage.class);
+        ManagePage managePage = loginPage.enterUserNameAndPassword(manage.getUserName(), manage.getPassword()).clickOnNavigateUpButton().expandManageOptions();
+        messagePage.clickOnMessageIcon();
+        contactsPage.clickOnLocation().clickOnLocationName();
+        timeOffRequestPage.clickOnPlusButton();
+        schedulePage.enterAComment().clickOnSendButton();
+        managePage.verifyComment();
+        homepage.ClickAndHold();
+        managePage.verifyYourMAnagerPostedNewMessageText();
+    }
+
+
+    //114528 - completed
+    @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
+    @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
+    public void userWithDayMonthIdentifiers(Map<String, String> testData) throws IOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        SchedulePage schedulePage = new SchedulePage();
+        ManagePage managePage = new ManagePage();
+        Homepage homepage = new Homepage();
+        ContactsPage contactsPage = new ContactsPage();
+        MessagePage messagePage = new MessagePage();
+        MBULearnPage mbuLearnPage = new MBULearnPage();
+        loginPage.enterMBUAsUNANdPW();
+        homepage.clickOnNavigateUpButton().expandManageOptions().clickOnContactsButton();
+        contactsPage.clickOnLocation().clickOnLocationName().enterContactName().clickOnMaryBaldwin();
+        managePage.verifyNoBirthdayOnRecord();
+    }
+
+
+    //114537 - completed
+    @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
+    @DataProviderArguments(filePath = FILE_PATH, sheetName = "T7")
+    public void useWithAnniversaryAndHireDate(Map<String, String> testData) throws IOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        SchedulePage schedulePage = new SchedulePage();
+        ManagePage managePage = new ManagePage();
+        Homepage homepage = new Homepage();
+        ContactsPage contactsPage = new ContactsPage();
+        MessagePage messagePage = new MessagePage();
+        MBULearnPage mbuLearnPage = new MBULearnPage();
+        loginPage.enterMBUAsUNANdPW();
+        homepage.clickOnNavigateUpButton().expandManageOptions().clickOnContactsButton();
+        contactsPage.clickOnLocation().clickOnLocationName().enterContactName().clickOnMaryBaldwin();
+        managePage.verifyHiredAtWithPlaceAndDate();
+
+    }
+
 
 }

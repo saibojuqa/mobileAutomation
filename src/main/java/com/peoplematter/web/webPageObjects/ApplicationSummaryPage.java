@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
  * Created by sai.boju on 1/3/17.
  */
 
-    public class ApplicationSummaryPage extends BasePage {
+public class ApplicationSummaryPage extends BasePage {
 
     private static final String SUBMIT = "//input[@type='submit']";
 
@@ -18,4 +18,4 @@ import org.openqa.selenium.By;
 
     }
 
- }
+}

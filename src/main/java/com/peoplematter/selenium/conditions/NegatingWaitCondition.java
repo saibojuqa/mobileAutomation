@@ -14,8 +14,8 @@ import org.openqa.selenium.WebElement;
 @Log4j
 public class NegatingWaitCondition implements Predicate<SearchContext> {
 
-    private WaitType waitType;
     private final By by;
+    private WaitType waitType;
     private SearchContext searchContext;
     private boolean isElementFound;
 

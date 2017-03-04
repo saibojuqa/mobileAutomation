@@ -8,11 +8,11 @@ import java.util.List;
 @Log4j
 public class FluentElement {
 
+    MobileFluentWait<FluentElement> fluentWait;
     private By by;
     private String elementName;
     private SearchContext searchContext;
     private WebDriver webDriver;
-    MobileFluentWait<FluentElement> fluentWait;
 
     public FluentElement(By by, WebDriver webDriver, SearchContext searchContext) {
         this.by = by;
@@ -49,7 +49,7 @@ public class FluentElement {
         return WebElementProvider.get(searchContext).getElement(this);
     }
 
-    public List<WebElement> getElements(){
+    public List<WebElement> getElements() {
         return searchContext.findElements(by);
     }
 
@@ -94,4 +94,4 @@ public class FluentElement {
     }
 
 
-    }
+}

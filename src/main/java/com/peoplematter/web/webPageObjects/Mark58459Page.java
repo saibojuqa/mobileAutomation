@@ -1,6 +1,5 @@
 package com.peoplematter.web.webPageObjects;
 
-import com.peoplematter.web.pojos.UserDetails;
 import org.openqa.selenium.By;
 
 /**

@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 public class whatToExpectPage extends BasePage {
 
     private static final String UNITED_STATES_OF_AMERICA = "//label[@for='selectedUSACountry']";
-    private static final String NEXT_BUTTON="moveNextSection";
+    private static final String NEXT_BUTTON = "moveNextSection";
 
 
     public EsignaturePage clickOnUSA() {

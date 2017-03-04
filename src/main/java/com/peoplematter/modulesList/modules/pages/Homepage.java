@@ -3,12 +3,8 @@ package com.peoplematter.modulesList.modules.pages;
 import com.peoplematter.core.Application;
 import com.peoplematter.pageObjects.BasePage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
-import static org.openqa.selenium.By.className;
-import static org.openqa.selenium.By.id;
-import static org.openqa.selenium.By.xpath;
+import static org.openqa.selenium.By.*;
 
 /**
  * Created by sai.boju on 12/7/16.
@@ -25,9 +21,16 @@ public class Homepage extends BasePage {
     private static final String SIGNOUT_BUTTON = "//android.widget.TextView[@text='Sign Out']";
     private static final String YES_BUTTON = "//android.widget.Button[@text='Yes']";
     private static final String STATUS_BAR = "android:id/statusBarBackground";
+    private static final String NO_OF_APPLICANTS = "android.widget.LinearLayout";
 
     public Homepage() {
         getfd().element(className(HOMEPAGE_CONTAINER)).waitUntil(MAX_TIME).ifElementIsNotDisplayed();
+    }
+
+    public Homepage clickOnNoOfApplicantsApplied() {
+        getfd().element(By.className(NO_OF_APPLICANTS)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+
+        return this;
     }
 
     public OptionsPage clickOnNavigateUpButton() {
@@ -62,21 +65,15 @@ public class Homepage extends BasePage {
         return this;
     }
 
-     public Homepage ClickAndHold() throws InterruptedException {
-           Application.getAndroidDriver().findElement(By.xpath("//android.view.View[@index = '1']")).click();
-            MBULearnPage mbuLearnPage = new MBULearnPage();
-            mbuLearnPage.swipeTopToBottom();
+    public Homepage ClickAndHold() throws InterruptedException {
+        Application.getAndroidDriver().findElement(By.xpath("//android.view.View[@index = '1']")).click();
+        MBULearnPage mbuLearnPage = new MBULearnPage();
+        mbuLearnPage.swipeTopToBottom();
 
-            return this;
-
-        }
-
+        return this;
 
     }
-
-
-
-
+}
 
 
 //((AndroidDriver)driver).scrollTo(Learn).click();

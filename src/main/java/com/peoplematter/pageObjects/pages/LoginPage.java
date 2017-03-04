@@ -3,7 +3,7 @@ package com.peoplematter.pageObjects.pages;
 
 import com.peoplematter.pageObjects.BasePage;
 
-import static org.openqa.selenium.By.*;
+import static org.openqa.selenium.By.id;
 
 public class LoginPage extends BasePage {
 

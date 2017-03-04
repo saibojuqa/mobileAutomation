@@ -1,6 +1,5 @@
 package com.peoplematter.modulesList.modules.pages;
 
-import com.peoplematter.core.Application;
 import com.peoplematter.pageObjects.BasePage;
 import org.openqa.selenium.By;
 
@@ -42,61 +41,60 @@ public class ActionItemsPage extends BasePage {
 
     }
 
-//141442//
+    //141442//
     public boolean clickOnPdfButtonAndGetMessage() throws InterruptedException {
         getfd().element(By.xpath(PDF_BUTTON)).waitUntil(MAX_TIME).
                 ifElementIsNotDisplayed().click();
-       // Thread.sleep(3000);
-       // getfd().executeScript("arguments[0].click();", getfd().element(By.xpath(VIEW_DOCUMENT_BUTTON)).getElement());
-         // Application.getAndroidDriver().switchTo().frame(0);
+        // Thread.sleep(3000);
+        // getfd().executeScript("arguments[0].click();", getfd().element(By.xpath(VIEW_DOCUMENT_BUTTON)).getElement());
+        // Application.getAndroidDriver().switchTo().frame(0);
         getfd().element(By.xpath(VIEW_DOCUMENT_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return getfd().element(By.xpath(ERROR_MESSAGE)).waitUntil(MAX_TIME).
                 ifElementIsNotDisplayed().isDisplayed();
     }
 
-    public ActionItemsPage clickOnVideoSaiButton(){
+    public ActionItemsPage clickOnVideoSaiButton() {
         getfd().element(By.xpath(VIDEOSAI_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
-public ActionItemsPage verifyDescription(){
-    getfd().element(By.id(DESCRIPTION_TEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
-    return this;
-}
+    public ActionItemsPage verifyDescription() {
+        getfd().element(By.id(DESCRIPTION_TEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
+        return this;
+    }
 
-    public ActionItemsPage verifyDateIsDisplayed(){
+    public ActionItemsPage verifyDateIsDisplayed() {
         getfd().element(By.id(DUE_DATE_VIEW)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
         return this;
     }
 
-    public ActionItemsPage clickOnCheckBox(){
+    public ActionItemsPage clickOnCheckBox() {
         getfd().element(By.id(CHECKBOX)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
-    public ActionItemsPage clickOnSaveButton(){
+    public ActionItemsPage clickOnSaveButton() {
         getfd().element(By.xpath(SAVE_BUTTON)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
-    public ActionItemsPage verifyVideoSaiText(){
+    public ActionItemsPage verifyVideoSaiText() {
         getfd().element(By.xpath(VIDEOSAI_TEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
         return this;
     }
 
-    public ActionItemsPage clickOnMessageSaiButton(){
+    public ActionItemsPage clickOnMessageSaiButton() {
         getfd().element(By.xpath(MESSAGESAI_TEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         return this;
     }
 
-    public ActionItemsPage verifyMessageSaiText(){
+    public ActionItemsPage verifyMessageSaiText() {
         getfd().element(By.xpath(MESSAGESAI_TEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
         return this;
     }
 
 
-
-    public ActionItemsPage verifyDisplayedMesssage(){
+    public ActionItemsPage verifyDisplayedMesssage() {
         getfd().element(By.id(MESSAGE_DISPLAY)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().isDisplayed();
         return this;
     }

@@ -5,12 +5,12 @@ import org.openqa.selenium.By;
 /**
  * Created by sai.boju on 1/2/17.
  */
-public class AuthorizationPage extends BasePage{
+public class AuthorizationPage extends BasePage {
 
 
     private static final String AUTHORIZATION = "//label[contains(@for,'agreedToBackgroundCheckAuthorization')]";
     private static final String CALIFORNIA_LAW = "//label[contains(@for,'requestsCopyOfReport')]";
-    private static final String NEXT_BUTTON="moveNextSection";
+    private static final String NEXT_BUTTON = "moveNextSection";
 
     public EducationPage clickOnAuthorization() {
 
@@ -21,10 +21,7 @@ public class AuthorizationPage extends BasePage{
         return new EducationPage();
 
 
-
-
     }
-
 
 
 }

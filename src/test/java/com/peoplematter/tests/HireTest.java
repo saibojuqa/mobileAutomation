@@ -1,26 +1,21 @@
 package com.peoplematter.tests;
 
-import com.peoplematter.modulesList.modules.pages.ContactsPage;
-import com.peoplematter.modulesList.modules.pages.HirePage;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peoplematter.BaseTest;
-import com.peoplematter.modulesList.LoginPage;
+import com.peoplematter.modulesList.modules.pages.ContactsPage;
+import com.peoplematter.modulesList.modules.pages.HirePage;
+import com.peoplematter.modulesList.modules.pages.LoginPage;
 import com.peoplematter.modulesList.modules.pages.ManagePage;
 import com.peoplematter.modulesList.modules.pojos.Manage;
 import com.peoplematter.utils.dataProvider.DataProviderArguments;
 import com.peoplematter.web.pojos.UserDetails;
 import com.peoplematter.web.tests.SubmitApplication;
-import com.peoplematter.web.webPageObjects.GetStartedPage;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.awt.*;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.util.Map;
-import java.util.UUID;
 
 /**
  * Created by sai.boju on 12/20/16.
@@ -50,15 +45,15 @@ public class HireTest extends BaseTest {
     @Test(dataProviderClass = com.peoplematter.utils.dataProvider.ExcelDataProvider.class, dataProvider = "excel")
     @DataProviderArguments(filePath = FILE_PATH, sheetName = "T5")
     //For Web user application//
-    public void sampleWebTest(Map<String, String> testData) throws IOException, InterruptedException {
+    public void userSubmitApplicationOnline(Map<String, String> testData) throws IOException, InterruptedException, AWTException {
         /*initWebDriver();
         System.out.println("Doneeeeeeeeeeeeeeeeeeeeeeeeeee");
         quitWebDiver();*/
 
         UserDetails userDetails = mapper.readValue(testData.get("userDetails"), UserDetails.class);
-        userDetails.setFirstName(userDetails.getFirstName()+ RandomStringUtils.randomAlphabetic(10));
-        userDetails.setLastName(userDetails.getLastName()+ RandomStringUtils.randomAlphabetic(10));
-        SubmitApplication submitApplication=new SubmitApplication();
+        userDetails.setFirstName(userDetails.getFirstName() + RandomStringUtils.randomAlphabetic(10));
+        userDetails.setLastName(userDetails.getLastName() + RandomStringUtils.randomAlphabetic(10));
+        SubmitApplication submitApplication = new SubmitApplication();
         submitApplication.submitUserApplication(userDetails);
     }
 }

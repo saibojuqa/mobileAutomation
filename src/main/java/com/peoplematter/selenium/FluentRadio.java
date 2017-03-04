@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 /**
  * Created by sai.boju on 11/14/16.
  */
-public class FluentRadio extends  FluentElement{
+public class FluentRadio extends FluentElement {
 
     public FluentRadio(By by, WebDriver webDriver, SearchContext searchContext) {
         super(by, webDriver, searchContext);

@@ -1,8 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0721964-fb06-41c5-aa02-8c8631198c81" name="Default" comment="Swipe">
+    <list default="true" id="c0721964-fb06-41c5-aa02-8c8631198c81" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PMMobileSmokeTests" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_codeborne_phantomjsdriver_1_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/WebBasePage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/WebLoginPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/WebLoginTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_htmlunit_driver_2_21.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_leg_rc_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/test.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_18.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_20.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_21.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_23.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_23.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_21.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_23.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_53_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_0_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_53_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_0_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_2_53_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_0_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_53_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_0_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_53_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_0_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_2_53_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_0_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_53_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_0_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_53_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_0_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_53_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_0_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/LoginPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testData/Template.xls" afterPath="$PROJECT_DIR$/testData/Template.xls" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PeopleMatter-automation.iml" afterPath="$PROJECT_DIR$/PeopleMatter-automation.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testng.xml" afterPath="$PROJECT_DIR$/Testng.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/application.properties" afterPath="$PROJECT_DIR$/conf/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/log4j.properties" afterPath="$PROJECT_DIR$/conf/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lombok-ast-0.2.3/META-INF/maven/com.google.guava/guava/pom.xml" afterPath="$PROJECT_DIR$/lombok-ast-0.2.3/META-INF/maven/com.google.guava/guava/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lombok-ast-0.2.3/lombok/ast/printer/web/ast.html" afterPath="$PROJECT_DIR$/lombok-ast-0.2.3/lombok/ast/printer/web/ast.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/Automation.log" afterPath="$PROJECT_DIR$/result/Automation.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/Automation.log.1" afterPath="$PROJECT_DIR$/result/Automation.log.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/Interfaces/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/Interfaces/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/core/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/core/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ActionItemsPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ActionItemsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ContactsPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ContactsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/HirePage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/HirePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/Homepage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/Homepage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/MBULearnPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/MBULearnPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ManagePage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ManagePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/MessagePage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/MessagePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/RecruitingPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/RecruitingPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/SchedulePage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/SchedulePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/TimeOffRequestPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/TimeOffRequestPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/pageObjects/BasePage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/pageObjects/BasePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/pageObjects/pages/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/pageObjects/pages/LoginPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/FluentDriver.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/FluentDriver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/FluentElement.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/FluentElement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/FluentRadio.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/FluentRadio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/FluentSelect.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/FluentSelect.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/WebElementProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/WebElementProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/conditions/NegatingWaitCondition.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/conditions/NegatingWaitCondition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/conditions/WaitCondition.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/conditions/WaitCondition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/utils/Screenshot.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/utils/Screenshot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/utils/dataProvider/ExcelDataProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/utils/dataProvider/ExcelDataProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/utils/listeners/AUTListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/utils/listeners/AUTListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/pojos/UserDetails.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/pojos/UserDetails.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/tests/SubmitApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/tests/SubmitApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/ApplicationSummaryPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/ApplicationSummaryPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/AuthorizationPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/AuthorizationPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/BusinessUnitsPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/BusinessUnitsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/DisclosuresPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/DisclosuresPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/EducationPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/EducationPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/GetStartedPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/GetStartedPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/HowMuchToGetPaidPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/HowMuchToGetPaidPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/IdentificationPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/IdentificationPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/Mark58459Page.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/Mark58459Page.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/ResumePage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/ResumePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/SelectJobsPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/SelectJobsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/TellUsAboutYourselfPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/TellUsAboutYourselfPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/TermsAndConditionsPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/TermsAndConditionsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/YourAvailabilityPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/YourAvailabilityPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/whatToExpectPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/whatToExpectPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/peoplematter/BaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/peoplematter/BaseTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ActionItemsTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ActionItemsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/HireTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/HireTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/LoginTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/LoginTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ManageTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ManageTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/RecruitingTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/RecruitingTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ScheduleTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ScheduleTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/TimeOffRequestTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/TimeOffRequestTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/ Automation Suite/SC2.0 - UI Automation - TestCases.html" afterPath="$PROJECT_DIR$/test-output/ Automation Suite/SC2.0 - UI Automation - TestCases.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/ Automation Suite/SC2.0 - UI Automation - TestCases.xml" afterPath="$PROJECT_DIR$/test-output/ Automation Suite/SC2.0 - UI Automation - TestCases.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/ Automation Suite/testng-failed.xml" afterPath="$PROJECT_DIR$/test-output/ Automation Suite/testng-failed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" afterPath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/emailable-report.html" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/index.html" afterPath="$PROJECT_DIR$/test-output/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.peoplematter.testngTest.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-com.peoplematter.testngTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.peoplematter.tests.LoginTest.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-com.peoplematter.tests.LoginTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.peoplematter.tests.ManageTest.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-com.peoplematter.tests.ManageTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/ Automation Suite/classes.html" afterPath="$PROJECT_DIR$/test-output/old/ Automation Suite/classes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/ Automation Suite/index.html" afterPath="$PROJECT_DIR$/test-output/old/ Automation Suite/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/ Automation Suite/main.html" afterPath="$PROJECT_DIR$/test-output/old/ Automation Suite/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/ Automation Suite/methods-alphabetical.html" afterPath="$PROJECT_DIR$/test-output/old/ Automation Suite/methods-alphabetical.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/ Automation Suite/methods-not-run.html" afterPath="$PROJECT_DIR$/test-output/old/ Automation Suite/methods-not-run.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/ Automation Suite/methods.html" afterPath="$PROJECT_DIR$/test-output/old/ Automation Suite/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/ Automation Suite/reporter-output.html" afterPath="$PROJECT_DIR$/test-output/old/ Automation Suite/reporter-output.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/ Automation Suite/testng.xml.html" afterPath="$PROJECT_DIR$/test-output/old/ Automation Suite/testng.xml.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/ Automation Suite/toc.html" afterPath="$PROJECT_DIR$/test-output/old/ Automation Suite/toc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Default suite/classes.html" afterPath="$PROJECT_DIR$/test-output/old/Default suite/classes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Default suite/index.html" afterPath="$PROJECT_DIR$/test-output/old/Default suite/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Default suite/main.html" afterPath="$PROJECT_DIR$/test-output/old/Default suite/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods-alphabetical.html" afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods-alphabetical.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods-not-run.html" afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods-not-run.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods.html" afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Default suite/reporter-output.html" afterPath="$PROJECT_DIR$/test-output/old/Default suite/reporter-output.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Default suite/testng.xml.html" afterPath="$PROJECT_DIR$/test-output/old/Default suite/testng.xml.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Default suite/toc.html" afterPath="$PROJECT_DIR$/test-output/old/Default suite/toc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/index.html" afterPath="$PROJECT_DIR$/test-output/old/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/testng-results.xml" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" />
     </list>
     <ignored path="PeopleMatter-automation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,14 +146,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ManageTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ManageTest.java">
+      <file leaf-file-name="TimeOffRequestTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/TimeOffRequestTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+            <state relative-caret-position="546">
+              <caret line="95" column="48" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeOffRequestPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/TimeOffRequestPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2280">
+              <caret line="160" column="25" selection-start-line="160" selection-start-column="25" selection-end-line="160" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppiumDriver.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/4.1.2/java-client-4.1.2.jar!/io/appium/java_client/AppiumDriver.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="109" column="5" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebLoginTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/WebLoginTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2460">
+              <caret line="177" column="43" selection-start-line="177" selection-start-column="43" selection-end-line="177" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebLoginPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/WebLoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2025">
+              <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -44,9 +211,21 @@
       <file leaf-file-name="SchedulePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/SchedulePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2010">
-              <caret line="138" column="20" selection-start-line="138" selection-start-column="20" selection-end-line="138" selection-end-column="20" />
+            <state relative-caret-position="2715">
+              <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MBULearnPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/MBULearnPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,82 +233,8 @@
       <file leaf-file-name="HireTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/HireTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HirePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/HirePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/LoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ManagePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScheduleTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ScheduleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="147" column="60" selection-start-line="147" selection-start-column="60" selection-end-line="147" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactsPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ContactsPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="22" column="91" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="105" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecruitingPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/RecruitingPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="39" column="12" selection-start-line="39" selection-start-column="3" selection-end-line="40" selection-end-column="114" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecruitingTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/RecruitingTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="570">
+              <caret line="53" column="81" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -165,16 +270,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/SampleTest2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/utils/dataProvider/ExcelDataProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/utils/Screenshot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/utils/listeners/AUTListener.java" />
-        <option value="$PROJECT_DIR$/testng/testng_smoke.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modules/pages/Page1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modules/smppp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modules/learn/smppp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/smppp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/pageObjects/pages/Page1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/pageObjects/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/learn/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/manage/pojos/Manage.java" />
@@ -183,39 +278,49 @@
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/pageObjects/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/manage/pages/Homepage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/manage/pages/OptionsPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/Interfaces/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/manage/pages/ManagePage.java" />
         <option value="$PROJECT_DIR$/result/Automation.log" />
         <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/web.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/sample.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ActionItemsPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/web/tests/SubmitApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/MobileBrowser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/Sample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/SchedulePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/FluentElement.java" />
+        <option value="$PROJECT_DIR$/Testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/HirePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/Sample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/MessagePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/WebTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/WebBasePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ActionItemsTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ScheduleTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/utils/dataProvider/ExcelDataProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ManagePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ManageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/Homepage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ContactsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/RecruitingTest.java" />
+        <option value="$PROJECT_DIR$/conf/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/Interfaces/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/TellUsAboutYourselfPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/TermsAndConditionsPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/ResumePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/YourAvailabilityPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/web/tests/SubmitApplication.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/HireTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/EducationPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/core/Application.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ContactsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ScheduleTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ManagePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/TimeOffRequestTest.java" />
-        <option value="$PROJECT_DIR$/conf/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/RecruitingPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/RecruitingTest.java" />
-        <option value="$PROJECT_DIR$/Testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/WebLoginTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/WebLoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/MBULearnPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/MessagePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/SchedulePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/TimeOffRequestPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/Homepage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ActionItemsTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/HirePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/HireTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ManageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/peoplematter/tests/TimeOffRequestTest.java" />
       </list>
     </option>
   </component>
@@ -242,10 +347,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
+    <option name="x" value="235" />
     <option name="y" value="23" />
-    <option name="width" value="1702" />
-    <option name="height" value="975" />
+    <option name="width" value="1111" />
+    <option name="height" value="817" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -294,6 +399,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -309,6 +417,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mobileAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobileAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobileAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testng" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -546,40 +668,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobileAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobileAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Lombok plugin" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="appli&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/conf/application.properties&#10;a&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/src/main/java/com/peoplematter/core/Application.java&#10;app&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/conf/application.properties&#10;pp&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/conf/application.properties&#10;appl&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/conf/application.properties&#10;applica&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/conf/application.properties&#10;exce&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/src/main/java/com/peoplematter/utils/dataProvider/ExcelDataProvider.java&#10;applicat&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/conf/application.properties&#10;data&#9;PSI&#9;JAVA://com.peoplematter.utils.DataProviderArguments&#10;json&#9;PSI&#9;JAVA://com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory" />
+    <property name="SearchEverywhereHistoryKey" value="hire&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/src/test/java/com/peoplematter/tests/HireTest.java&#10;appl&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/conf/application.properties&#10;app&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/src/main/java/com/peoplematter/core/Application.java&#10;appli&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/conf/application.properties&#10;web&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/src/main/java/com/peoplematter/modulesList/modules/pages/WebLoginPage.java&#10;a&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/src/main/java/com/peoplematter/core/Application.java&#10;pp&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/conf/application.properties&#10;applica&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/conf/application.properties&#10;exce&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/src/main/java/com/peoplematter/utils/dataProvider/ExcelDataProvider.java&#10;applicat&#9;FILE&#9;file:///Users/sai.boju/mobileAutomation/conf/application.properties&#10;data&#9;PSI&#9;JAVA://com.peoplematter.utils.DataProviderArguments&#10;json&#9;PSI&#9;JAVA://com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/testData" />
-      <recent name="$PROJECT_DIR$/src/test/resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.peoplematter.modules.pages" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/testData" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.peoplematter.modules.pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/testData" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.ManageTest.createFeedItem">
-    <configuration default="false" name="RecruitingTest.viewDocumentUpload" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TimeOffRequestTest.shiftOfferRequestsByManager">
+    <configuration default="false" name="WebLoginTest.publishPushNotification" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.peoplematter.tests.*" />
@@ -591,8 +724,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.peoplematter.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.peoplematter.tests.RecruitingTest" />
-      <option name="METHOD_NAME" value="viewDocumentUpload" />
+      <option name="MAIN_CLASS_NAME" value="com.peoplematter.tests.WebLoginTest" />
+      <option name="METHOD_NAME" value="publishPushNotification" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -612,35 +745,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="/Users/sai.boju/mobileAutomation/Testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="PeopleMatter-automation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/Testng.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="ManageTest.createFeedItem" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="WebLoginTest.applicationSubmitted" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.peoplematter.tests.*" />
@@ -652,8 +757,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.peoplematter.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.peoplematter.tests.ManageTest" />
-      <option name="METHOD_NAME" value="createFeedItem" />
+      <option name="MAIN_CLASS_NAME" value="com.peoplematter.tests.WebLoginTest" />
+      <option name="METHOD_NAME" value="applicationSubmitted" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -673,7 +778,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="ManageTest.testFunctionalityAndSettings" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="WebLoginTest.applicantApplyToPosition" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.peoplematter.tests.*" />
@@ -685,8 +790,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.peoplematter.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.peoplematter.tests.ManageTest" />
-      <option name="METHOD_NAME" value="testFunctionalityAndSettings" />
+      <option name="MAIN_CLASS_NAME" value="com.peoplematter.tests.WebLoginTest" />
+      <option name="METHOD_NAME" value="applicantApplyToPosition" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -706,7 +811,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="HireTest.testApplicantApplication" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TimeOffRequestTest.shiftOfferRequestsByManager" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.peoplematter.tests.*" />
@@ -718,8 +823,41 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.peoplematter.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.peoplematter.tests.HireTest" />
-      <option name="METHOD_NAME" value="testApplicantApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.peoplematter.tests.TimeOffRequestTest" />
+      <option name="METHOD_NAME" value="shiftOfferRequestsByManager" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="TimeOffRequestTest.shiftOfferRequestsByManager (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.peoplematter.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="PeopleMatter-automation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.peoplematter.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.peoplematter.tests.TimeOffRequestTest" />
+      <option name="METHOD_NAME" value="shiftOfferRequestsByManager" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -970,19 +1108,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.RecruitingTest.viewDocumentUpload" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG./Users/sai.boju/mobileAutomation/Testng.xml" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.ManageTest.createFeedItem" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.ManageTest.testFunctionalityAndSettings" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.HireTest.testApplicantApplication" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.WebLoginTest.publishPushNotification" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.WebLoginTest.applicationSubmitted" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.WebLoginTest.applicantApplyToPosition" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.TimeOffRequestTest.shiftOfferRequestsByManager" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.TimeOffRequestTest.shiftOfferRequestsByManager (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.ManageTest.createFeedItem" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.HireTest.testApplicantApplication" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.ManageTest.testFunctionalityAndSettings" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG./Users/sai.boju/mobileAutomation/Testng.xml" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.RecruitingTest.viewDocumentUpload" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TimeOffRequestTest.shiftOfferRequestsByManager" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TimeOffRequestTest.shiftOfferRequestsByManager (1)" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.WebLoginTest.applicantApplyToPosition" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.WebLoginTest.publishPushNotification" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.WebLoginTest.applicationSubmitted" />
       </list>
     </recent_temporary>
   </component>
@@ -1084,67 +1222,74 @@
       <option name="project" value="LOCAL" />
       <updated>1486584521113</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Swipe">
+      <created>1486585291040</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1486585291040</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HireTest_testApplicantApplication - 2017.02.08 at 14h 43m 24s.xml">
-      <configuration name="HireTest.testApplicantApplication" configurationId="TestNG" />
+    <history-entry file="TimeOffRequestTest_shiftOfferRequestsByManager - 2017.03.03 at 13h 10m 55s.xml">
+      <configuration name="TimeOffRequestTest.shiftOfferRequestsByManager" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HireTest_testApplicantApplication - 2017.02.08 at 15h 03m 25s.xml">
-      <configuration name="HireTest.testApplicantApplication" configurationId="TestNG" />
+    <history-entry file="TimeOffRequestTest_shiftOfferRequestsByManager - 2017.03.03 at 13h 16m 44s.xml">
+      <configuration name="TimeOffRequestTest.shiftOfferRequestsByManager" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ManageTest_createFeedItem - 2017.02.08 at 14h 10m 31s.xml">
-      <configuration name="ManageTest.createFeedItem" configurationId="TestNG" />
+    <history-entry file="TimeOffRequestTest_shiftOfferRequestsByManager - 2017.03.03 at 13h 16m 50s.xml">
+      <configuration name="TimeOffRequestTest.shiftOfferRequestsByManager" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ManageTest_createFeedItem - 2017.02.08 at 14h 21m 18s.xml">
-      <configuration name="ManageTest.createFeedItem" configurationId="TestNG" />
+    <history-entry file="TimeOffRequestTest_shiftOfferRequestsByManager - 2017.03.03 at 13h 19m 43s.xml">
+      <configuration name="TimeOffRequestTest.shiftOfferRequestsByManager" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ManageTest_createFeedItem - 2017.02.08 at 14h 24m 22s.xml">
-      <configuration name="ManageTest.createFeedItem" configurationId="TestNG" />
+    <history-entry file="TimeOffRequestTest_shiftOfferRequestsByManager - 2017.03.03 at 13h 23m 27s.xml">
+      <configuration name="TimeOffRequestTest.shiftOfferRequestsByManager" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ManageTest_createFeedItem - 2017.02.08 at 14h 27m 34s.xml">
-      <configuration name="ManageTest.createFeedItem" configurationId="TestNG" />
+    <history-entry file="TimeOffRequestTest_shiftOfferRequestsByManager - 2017.03.03 at 13h 36m 29s.xml">
+      <configuration name="TimeOffRequestTest.shiftOfferRequestsByManager" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ManageTest_createFeedItem - 2017.02.08 at 14h 33m 15s.xml">
-      <configuration name="ManageTest.createFeedItem" configurationId="TestNG" />
+    <history-entry file="TimeOffRequestTest_shiftOfferRequestsByManager - 2017.03.03 at 13h 41m 46s.xml">
+      <configuration name="TimeOffRequestTest.shiftOfferRequestsByManager" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ManageTest_createFeedItem - 2017.02.08 at 14h 36m 46s.xml">
-      <configuration name="ManageTest.createFeedItem" configurationId="TestNG" />
+    <history-entry file="TimeOffRequestTest_shiftOfferRequestsByManager - 2017.03.03 at 15h 25m 17s.xml">
+      <configuration name="TimeOffRequestTest.shiftOfferRequestsByManager" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ManageTest_createFeedItem - 2017.02.08 at 15h 06m 02s.xml">
-      <configuration name="ManageTest.createFeedItem" configurationId="TestNG" />
+    <history-entry file="TimeOffRequestTest_shiftOfferRequestsByManager - 2017.03.03 at 15h 27m 22s.xml">
+      <configuration name="TimeOffRequestTest.shiftOfferRequestsByManager" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ManageTest_testFunctionalityAndSettings - 2017.02.08 at 14h 41m 08s.xml">
-      <configuration name="ManageTest.testFunctionalityAndSettings" configurationId="TestNG" />
+    <history-entry file="TimeOffRequestTest_shiftOfferRequestsByManager - 2017.03.03 at 15h 32m 01s.xml">
+      <configuration name="TimeOffRequestTest.shiftOfferRequestsByManager" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="23" width="1702" height="975" extended-state="0" />
+    <frame x="235" y="23" width="1111" height="817" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17108168" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873276" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31666666" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13576159" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22354497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27260274" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2426557" sideWeight="0.84" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2790279" sideWeight="0.84" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19985826" sideWeight="0.16" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960127" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16732542" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16630197" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1177,7 +1322,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/peoplematter/utils/dataProvider/ExcelDataProvider.java</url>
-          <line>34</line>
+          <line>33</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
@@ -1191,381 +1336,388 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/pageObjects/pages/LoginPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/HirePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="246">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/conditions/WaitCondition.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ManageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
+        <state relative-caret-position="840">
+          <caret line="189" column="0" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/conditions/NegatingWaitCondition.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="130" column="6" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3525">
+          <caret line="270" column="38" selection-start-line="270" selection-start-column="38" selection-end-line="270" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/utils/listeners/AUTListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/FluentDriver.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="410">
+          <caret line="670" column="19" selection-start-line="670" selection-start-column="19" selection-end-line="670" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/Interfaces/Constants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/utils/DataProviderArguments.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/pageObjects/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/19.0/guava-19.0.jar!/com/google/common/base/Preconditions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.8/testng-6.8.8-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2055">
-          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/utils/dataProvider/ExcelDataProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="488">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/web.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="967" column="18" selection-start-line="967" selection-start-column="18" selection-end-line="967" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.5.3/jackson-databind-2.5.3.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="150" column="11" selection-start-line="150" selection-start-column="11" selection-end-line="150" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.8/testng-6.8.8-sources.jar!/org/testng/internal/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="589" column="38" selection-start-line="589" selection-start-column="38" selection-end-line="589" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/WebElementProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/SampleMobileWebTest.java" />
-    <entry file="file://$PROJECT_DIR$/test-output/emailable-report.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/utils/dataProvider/DataProviderArguments.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/ApplicationSummaryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/tests/SubmitApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/MobileBrowser.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/Sample.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/FluentElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="62" column="69" selection-start-line="62" selection-start-column="69" selection-end-line="62" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/MobileFluentWait.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/core/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="74" column="86" selection-start-line="74" selection-start-column="86" selection-end-line="74" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/testng/lib/testng-plugin.jar!/resources/standardSchemas/testng-1.0.dtd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="189" column="28" selection-start-line="189" selection-start-column="28" selection-end-line="189" selection-end-column="28" />
-          <folding />
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/TimeOffRequestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="45" column="63" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/OptionsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/MBULearnPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ActionItemsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/TimeOffRequestPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/Homepage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#1325#1326#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ActionItemsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/MessagePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/SchedulePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
-          <caret line="138" column="20" selection-start-line="138" selection-start-column="20" selection-end-line="138" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/RecruitingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="39" column="12" selection-start-line="39" selection-start-column="3" selection-end-line="40" selection-end-column="114" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ContactsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="22" column="91" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/HirePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/HireTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ManagePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ManageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/RecruitingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="436">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ScheduleTest.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3194">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/ActionItemsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/OptionsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng/testng_smoke.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="147" column="60" selection-start-line="147" selection-start-column="60" selection-end-line="147" selection-end-column="60" />
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar!/org/apache/commons/lang3/RandomStringUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/pojos/UserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ActionItemsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-845">
+          <caret line="23" column="77" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/MessagePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/RecruitingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/ManagePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-860">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/AuthorizationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/DisclosuresPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/Interfaces/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/selenium/MobileFluentWait.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/HowMuchToGetPaidPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/TellUsAboutYourselfPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/whatToExpectPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/TaxCreditEligibilityPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/TermsAndConditionsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/ResumePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/EqualEmploymentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/tests/SubmitApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/EducationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="23" column="41" selection-start-line="22" selection-start-column="10" selection-end-line="24" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/core/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/web/webPageObjects/YourAvailabilityPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/RecruitingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/Homepage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/SchedulePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2715">
+          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/HireTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="53" column="81" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/WebLoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/WebLoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2460">
+          <caret line="177" column="43" selection-start-line="177" selection-start-column="43" selection-end-line="177" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/4.1.2/java-client-4.1.2.jar!/io/appium/java_client/AppiumDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="109" column="5" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/TimeOffRequestPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="160" column="25" selection-start-line="160" selection-start-column="25" selection-end-line="160" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peoplematter/modulesList/modules/pages/MBULearnPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/peoplematter/tests/TimeOffRequestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="95" column="48" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1635,7 +1787,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: cglib:cglib-nodep:2.1_3</last-edited>
+          <last-edited>Maven: cglib:cglib-nodep:3.2.4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

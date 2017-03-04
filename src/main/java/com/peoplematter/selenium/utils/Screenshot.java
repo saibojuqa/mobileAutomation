@@ -2,7 +2,6 @@ package com.peoplematter.selenium.utils;
 
 import com.peoplematter.core.Application;
 import lombok.extern.log4j.Log4j;
-import org.omg.SendingContext.RunTime;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;

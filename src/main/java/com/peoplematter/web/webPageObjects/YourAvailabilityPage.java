@@ -1,5 +1,6 @@
 package com.peoplematter.web.webPageObjects;
 
+import com.peoplematter.core.Application;
 import com.peoplematter.web.pojos.UserDetails;
 import org.openqa.selenium.By;
 
@@ -19,7 +20,7 @@ public class YourAvailabilityPage extends BasePage {
     private static final String NOTICE_PERIOD_SELECTION = "//a[text()='%s']";
     private static final String NEXT = "moveNextSection";
 
-    public HowMuchToGetPaidPage checkAvailability(UserDetails userDetails) {
+    public YourAvailabilityPage checkAvailability(UserDetails userDetails) {
 
         getWd().element(By.xpath(HOURS_PER_WEEK)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().clear().sendKeys
                 (userDetails.getHours());
@@ -30,8 +31,10 @@ public class YourAvailabilityPage extends BasePage {
         getWd().element(By.xpath(NOTICE_PERIOD)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
         getWd().element(By.xpath(String.format(NOTICE_PERIOD_SELECTION, userDetails.getNoticePeriod()))).waitUntil(MAX_TIME)
                 .ifElementIsNotDisplayed().click();
-        getWd().element(By.id(NEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
-        return new HowMuchToGetPaidPage();
+
+        Application.getWebdriver().findElement(By.id("moveNextSection")).click();
+        //  getWd().element(By.id(NEXT)).waitUntil(MAX_TIME).ifElementIsNotDisplayed().click();
+        return this;
 
     }
 

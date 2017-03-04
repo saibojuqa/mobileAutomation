@@ -9,12 +9,12 @@ public class FluentDriver {
     private WebDriver webDriver;
 
 
-    public FluentDriver(AndroidDriver androidDriver){
-        this.webDriver=androidDriver;
+    public FluentDriver(AndroidDriver androidDriver) {
+        this.webDriver = androidDriver;
     }
 
-    public FluentDriver(WebDriver webDriver){
-        this.webDriver=webDriver;
+    public FluentDriver(WebDriver webDriver) {
+        this.webDriver = webDriver;
     }
 
     public WebDriver getWebDriver() {
@@ -28,9 +28,11 @@ public class FluentDriver {
     public FluentElement element(By by) {
         return new FluentElement(by, webDriver, webDriver);
     }
+
     public Object executeScript(final String script, final Object... args) {
         return ((JavascriptExecutor) webDriver).executeScript(script, args);
     }
+
     public FluentButton button(By by) {
         return new FluentButton(by, webDriver, webDriver);
     }

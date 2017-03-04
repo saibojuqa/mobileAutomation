@@ -1,10 +1,7 @@
 package com.peoplematter;
 
-import org.testng.annotations.AfterMethod;
 import com.peoplematter.Interfaces.Constants;
 import com.peoplematter.core.Application;
-import com.peoplematter.utils.dataProvider.DataProviderArguments;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import java.net.MalformedURLException;
@@ -17,19 +14,16 @@ public class BaseTest extends Application implements Constants {
     Application application = new Application();
 
     @BeforeSuite
-    public void setup() {
-        try {
-           initAndroidDriver();
-            //initWebAndroidDriver();
-            //initMobileAndroidDriver();
-       } catch (MalformedURLException e) {
-           e.printStackTrace();
-        }
+    public void setup() throws MalformedURLException {
+        initAndroidDriver();
+        //initApplicationFireFoxDriver();
     }
 
     //   @AfterSuite
-    @AfterMethod
-	public void tearDown() {
-        Application.getAndroidDriver().closeApp();
-    }
+    //  @AfterMethod
+    //public void tearDown() {
+    //   Application.getAndroidDriver().quit();
+//}
 }
+
+

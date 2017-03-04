@@ -5,7 +5,6 @@ import jxl.Cell;
 import jxl.Sheet;
 import jxl.read.biff.BiffException;
 import lombok.extern.log4j.Log4j;
-
 import org.testng.TestNGException;
 import org.testng.annotations.DataProvider;
 
@@ -26,7 +25,7 @@ public class ExcelDataProvider {
         List<HashMap<String, String>> dataSets = ExcelDataProvider.getDataFromExcel(Application.basedir + "/" + arguments.get("filePath"), arguments.get("sheet"));
 //        log.info("File path is :" + dataSets.get(1));
         List<Object[]> data = new ArrayList<>();
-  
+
         for (HashMap<String, String> dataSet : dataSets) {
             data.add(new Object[]{dataSet});
         }
