@@ -83,7 +83,7 @@ public class TimeOffRequestTest extends BaseTest {
         schedulePage.enterAComment();
         timeOffRequestPage.clickOnApproveText().verifyApprovedTimeOffText().verifyAdditionalRequestsText();
         schedulePage.verifyDate();
-        //Remove that
+        //Remove it form Approve
         //Again request time off for same date
         contactsPage.clickOnBackButton();
         timeOffRequestPage.clickOnSecondPendingRequest().clickOnDenyButton();
